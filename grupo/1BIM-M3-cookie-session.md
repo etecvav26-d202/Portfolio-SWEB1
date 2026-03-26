@@ -34,3 +34,6 @@ No caso do **carrinho de compras**, as **sessions** também são mais adequadas,
 Já para **preferências do usuário**, como idioma ou tema, os **cookies** são ideais, pois guardam dados simples no navegador e permitem que essas configurações sejam mantidas por mais tempo.
 
 Assim, **sessions** são usadas para **dados sensíveis e temporários**, enquanto **cookies* são mais indicados para **informações simples e persistentes**.
+
+--- 
+
