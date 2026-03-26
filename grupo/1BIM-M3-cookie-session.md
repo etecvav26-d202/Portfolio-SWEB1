@@ -37,3 +37,4 @@ Assim, **sessions** são usadas para **dados sensíveis e temporários**, enquan
 
 --- 
 
+## Exercício 3 — Pergunta de investigação
