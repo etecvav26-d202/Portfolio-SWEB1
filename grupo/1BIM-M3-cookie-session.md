@@ -9,4 +9,4 @@
 ## Autores
 | Alunos(as) | Função |
 | ------ | ------ |
-| Alice Gimenez Siqueira (https://github.com/alice-gimenez) | Estrutura do Relatório e Exercício |
+| [Alice Gimenez Siqueira](https://github.com/alice-gimenez) | Estrutura do Relatório e Exercício |
