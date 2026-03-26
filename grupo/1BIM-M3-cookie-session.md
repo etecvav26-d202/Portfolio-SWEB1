@@ -50,4 +50,12 @@ Na sequência, foi realizado o processo de **exclusão do cookie**. Para isso, u
 **Conclusão:** Ao final do exercício, foi possível compreender claramente o funcionamento dos cookies em aplicações web, incluindo seu processo de criação, armazenamento no navegador, envio automático em requisições futuras e remoção.
 Além disso,  **o cookie não aparece imediatamente na primeira execução porque ele só se torna disponível para o servidor após o navegador recebê-lo e reenviá-lo em uma nova requisição.**
 
+---
+
+## Exercício 4 — Pergunta de reflexão
+
+---
+
+# Referências
+
 
