@@ -38,3 +38,16 @@ Assim, **sessions** são usadas para **dados sensíveis e temporários**, enquan
 --- 
 
 ## Exercício 3 — Pergunta de investigação
+
+Para iniciar a atividade, foi criado um arquivo (teste.php) com um código já definido em PHP responsável por **criar e acessar um cookie chamado "contador"**. O arquivo foi executadoo no navegador através do servidor local (localhost).
+
+Na 1ª execução da página, o código utilizou a função `setcookie()` para enviar o cookie ao navegador, definindo seu valor como **"1"** e o tempo de expiração de **1 hora** (devido ao `time()+3600` presente no código). Porém, mesmo com a criação do cookie, a mensagem exibida foi **"Cookie ainda não disponível"**. Isso ocorreu porque, no funcionamento do protocolo HTTP, o cookie é enviado do servidor para o navegador na resposta da requisição, mas ele só estará disponível para leitura pelo PHP em uma requisição futura, ou seja, **após a página ser recarregada**.
+
+Em seguida, ao atualizar a página no navegador, o comportamento mudou. Dessa vez, o navegador já havia armazenado o cookie enviado anteriormente e o **incluiu automaticamente na nova requisição ao servidor**. Com isso, o PHP conseguiu acessar o valor do cookie por meio da variável `$_COOKIE`, exibindo na tela a mensagem "Valor do cookie: 1". Isso confirmou que o cookie foi corretamente criado, armazenado e recuperado.
+
+Na sequência, foi realizado o processo de **exclusão do cookie**. Para isso, utilizou-se novamente a função `setcookie()`, desta vez definindo um tempo de expiração no passado, o que fez com que o navegador removesse o cookie automaticamente. Após essa ação, ao atualizar a página, o cookie deixou de existir, retornando ao estado inicial. Dessa forma, ao executar novamente o código original e atualizar a página, o comportamento se repetiu: na primeira execução o cookie não estava disponível e, após o recarregamento, passou a ser exibido corretamente.
+
+**Conclusão:** Ao final do exercício, foi possível compreender claramente o funcionamento dos cookies em aplicações web, incluindo seu processo de criação, armazenamento no navegador, envio automático em requisições futuras e remoção.
+Além disso,  **o cookie não aparece imediatamente na primeira execução porque ele só se torna disponível para o servidor após o navegador recebê-lo e reenviá-lo em uma nova requisição.**
+
+
