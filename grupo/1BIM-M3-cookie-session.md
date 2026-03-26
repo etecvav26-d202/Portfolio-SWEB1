@@ -10,3 +10,4 @@
 | Alunos(as) | Função |
 | ------ | ------ |
 | [Alice Gimenez Siqueira](https://github.com/alice-gimenez) | Estrutura do Relatório e Exercício |
+| [Alice Rasmussen Rezende Alves](https://github.com/alicerez0703) | Estrutura do Relatório e Exercício |
