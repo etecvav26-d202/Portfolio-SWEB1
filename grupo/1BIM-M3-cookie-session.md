@@ -24,3 +24,13 @@
 ---
 
 ## Exercício 2 — Pergunta de aplicação
+
+Em uma loja virtual, **cookies e sessions** podem ser usados juntos para garantir funcionamento e segurança.
+
+Para manter o usuário logado, o mais indicado é usar **sessions**, pois os dados ficam no servidor, sendo mais seguros. Se for necessário manter o login após fechar o navegador, pode-se usar um **cookie** com um token para recriar a sessão.
+
+No caso do **carrinho de compras**, as **sessions** também são mais adequadas, pois armazenam os itens com segurança no servidor, evitando alterações indevidas.
+
+Já para **preferências do usuário**, como idioma ou tema, os **cookies** são ideais, pois guardam dados simples no navegador e permitem que essas configurações sejam mantidas por mais tempo.
+
+Assim, **sessions** são usadas para **dados sensíveis e temporários**, enquanto **cookies* são mais indicados para **informações simples e persistentes**.
