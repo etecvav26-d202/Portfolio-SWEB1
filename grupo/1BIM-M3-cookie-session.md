@@ -18,3 +18,8 @@
 ---
 
 # Exercícios
+
+## Exercício 1 — Pergunta conceitual
+
+---
+
