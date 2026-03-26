@@ -23,3 +23,4 @@
 
 ---
 
+## Exercício 2 — Pergunta de aplicação
