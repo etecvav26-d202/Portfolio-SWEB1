@@ -27,7 +27,7 @@ As **sessions** são mais seguras, isso porque os dados ficam armazenados no ser
 
 Já os **cookies** são menos seguros, pois ficam no cliente (navegador) e podem ser acessados, modificados ou até apagados pelo usuário. 
 
-Os cookies são mais adequados para dados simples e ficam armazenados no navegador (cliente), enquanto os sessions são mais adequadas para dados importantes e ficam armazenadas no servidor.
+Os **cookies** são mais adequados para dados simples e ficam armazenados no navegador (cliente), enquanto os **sessions** são mais adequadas para dados importantes e ficam armazenadas no servidor.
 
 
 ---
