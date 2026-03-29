@@ -79,3 +79,4 @@ Já em relação aos **possíveis riscos ao utilizar apenas cookies**, isso acon
 
 - PHP. ***setcookie.*** Disponível em: https://www.php.net/manual/pt_BR/function.setcookie.php. Acesso em: 29 de março de 2026.
 
+- PHP. ***Sessions.*** Disponível em: https://www.php.net/manual/pt_BR/book.session.php. Acesso em: 29 de março de 2026.
