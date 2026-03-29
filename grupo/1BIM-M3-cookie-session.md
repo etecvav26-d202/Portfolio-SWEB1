@@ -23,6 +23,12 @@
 
 Cookies e sessions são usados para **manter informações entre páginas**, mas possuem diferenças importantes. Os **cookies armazenam os dados diretamente no navegador do usuário** (lado do cliente), o que os torna mais simples, porém menos seguros, já que podem ser apagados ou modificados. Já as **sessions armazenam os dados no servidor** (lado do servidor), mantendo no navegador apenas um identificador que permite reconhecer o usuário. Dessa forma, as sessions são mais seguras, enquanto os cookies são mais limitados.
 
+As **sessions** são mais seguras, isso porque os dados ficam armazenados no servidor, e no navegador vai apenas um identificador, dificultando que o usuário veja ou altere as informações.
+
+Já os **cookies** são menos seguros, pois ficam no cliente (navegador) e podem ser acessados, modificados ou até apagados pelo usuário. 
+
+Os cookies são mais adequados para dados simples e ficam armazenados no navegador (cliente), enquanto os sessions são mais adequadas para dados importantes e ficam armazenadas no servidor.
+
 
 ---
 
