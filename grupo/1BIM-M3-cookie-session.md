@@ -21,6 +21,9 @@
 
 ## Exercício 1 — Pergunta conceitual
 
+Cookies e sessions são usados para **manter informações entre páginas**, mas possuem diferenças importantes. Os **cookies armazenam os dados diretamente no navegador do usuário** (lado do cliente), o que os torna mais simples, porém menos seguros, já que podem ser apagados ou modificados. Já as **sessions armazenam os dados no servidor** (lado do servidor), mantendo no navegador apenas um identificador que permite reconhecer o usuário. Dessa forma, as sessions são mais seguras, enquanto os cookies são mais limitados.
+
+
 ---
 
 ## Exercício 2 — Pergunta de aplicação
