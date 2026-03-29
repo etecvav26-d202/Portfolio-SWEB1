@@ -63,6 +63,10 @@ Além disso,  **o cookie não aparece imediatamente na primeira execução porqu
 
 ## Exercício 4 — Pergunta de reflexão
 
+As **sessions** normalmente são preferidas para autenticação em sistemas web, pois permitem **armazenar os dados** no servidor. Assim, quando um usuário acessa, é necessário apenas um identificador de sessão (ID de conexão), o que aumenta o controle e a confiança do sistema. 
+
+
+
 ---
 
 # Referências
