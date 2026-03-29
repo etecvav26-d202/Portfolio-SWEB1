@@ -67,6 +67,7 @@ As **sessions** normalmente são preferidas para autenticação em sistemas web,
 
 Sobre a **segurança**, isso é uma grande vantagem, pois informações sensíveis, como o login e permissões, não são expostas no navegador do usuário, diminuindo o risco de acesso indevido ou vazamento de dados.
 
+Quanto a **manipulação de dados**, as sessions facilitam o armazenamento e a recuperação das informações por meio da variável `$_SESSION`, facilitando que os dados sejam salvos entre diferentes acessos de forma organizada, sem precisar que o usuário envie os dados constantemente. 
 ---
 
 # Referências
