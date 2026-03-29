@@ -75,6 +75,7 @@ Já em relação aos **possíveis riscos ao utilizar apenas cookies**, isso acon
 
 # Referências
 
-- **STACK OVERFLOW.** *Qual a diferença entre Sessions e Cookies.* Disponível em: https://pt.stackoverflow.com/questions/115190/qual-a-diferen%c3%a7a-entre-sessions-e-cookies. Acesso em: 29 de março de 2026.
+- STACK OVERFLOW. ***Qual a diferença entre Sessions e Cookies.*** Disponível em: https://pt.stackoverflow.com/questions/115190/qual-a-diferen%c3%a7a-entre-sessions-e-cookies. Acesso em: 28 de março de 2026.
 
+- PHP. ***setcookie.*** Disponível em: https://www.php.net/manual/pt_BR/function.setcookie.php. Acesso em: 29 de março de 2026.
 
