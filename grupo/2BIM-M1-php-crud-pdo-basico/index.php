@@ -36,7 +36,12 @@ require 'includes/footer.php';
                 ?>
             </td>
 
-            
+            <td>
+                <?php
+                echo $produto['nome'];
+                ?>
+            </td>
+
 
     }
 
