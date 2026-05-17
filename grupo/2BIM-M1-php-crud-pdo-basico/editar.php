@@ -19,5 +19,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $preco = $_POST['preco'];
     $estoque = $_POST['estoque'];
 
+    $sql = "UPDATE produtos
+    
+    SET 
+    nome = :nome,
+    fabricante = :fabricante,
+    preco = :preco,
+    estoque = :estoque
+    
+    WHERE id = :id;"
+
     
 }
