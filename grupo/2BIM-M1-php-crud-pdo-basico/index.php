@@ -62,6 +62,10 @@ require 'includes/header.php';
             </td>
 
             <td>
+                <a href="editar.php?id=<?php echo $produto['id']; ?>">
+                Editar
+                </a>
+
                 <a href="excluir.php?id=<?php
                 echo $produto['id'];
                 ?>">
