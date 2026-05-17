@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     preco = :preco,
     estoque = :estoque
     
-    WHERE id = :id;"
+    WHERE id = :id;";
 
     $stmt = $pdo->prepare($sql);
 
