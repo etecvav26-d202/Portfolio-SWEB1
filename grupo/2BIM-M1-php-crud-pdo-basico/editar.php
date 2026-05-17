@@ -61,7 +61,15 @@ require_once 'includes/header.php';
 
     <br><br>
 
+    <label>Preço</label>
+    <input type="text" step="0.01" name="preco" value="<?php echo $produto['preco']; ?>" required>
+
+    <br><br>
+
     
+
+
+
 
 
     
