@@ -25,4 +25,18 @@ require 'includes/footer.php';
         <th>Estoque</th>
     </tr>
 
+    <?php
+    foreach($produtos as $produto){
+        ?>
+
+        <tr>
+            <td>
+                <?php 
+                echo $produto['id'];
+                ?>
+            </td>
+
+            
+
+    }
 
