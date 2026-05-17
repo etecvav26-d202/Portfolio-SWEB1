@@ -30,3 +30,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php
 require_once 'includes/header.php';
 ?>
+
+<h2>Cadastrar Produto</h2>
