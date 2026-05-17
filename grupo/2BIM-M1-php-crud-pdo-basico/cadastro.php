@@ -15,5 +15,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $stmt = $pdo->prepare($sql);
 
+    &stmt->execute([
+        ':nome' => $nome;
+        ':fabricante' => $fabricante;
+        ':preco' => $preco;
+        ':estoque' => $estoque
+    ]);
     
+
 }
