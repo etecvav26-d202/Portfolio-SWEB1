@@ -11,3 +11,6 @@ $stmt->execute([
     ':id' => $id
 ]);
 
+header("Location: index.php")
+
+?>
