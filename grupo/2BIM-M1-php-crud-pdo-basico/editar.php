@@ -11,3 +11,5 @@ $stmt->execute([
     ':id' => $id
 ]);
 
+$produto = $stmt->fetch(PDO::FETCH_ASSOC);
+
