@@ -60,6 +60,16 @@ require 'includes/header.php';
                 echo $produto['estoque'];
                 ?>
             </td>
+
+            <td>
+                <a href="excluir.php?id=<?php
+                echo $produto['id'];
+                ?>">
+                Excluir
+                </a>
+            </td>
+
+
         </tr>
 
         <?php }
