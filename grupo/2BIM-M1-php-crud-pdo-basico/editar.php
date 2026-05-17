@@ -51,5 +51,9 @@ require_once 'includes/header.php';
 <h2>Editar Produtos</h2>
 
 <form method="POST">
-    
+    <label>Nome</label>
+    <input type="text" name="nome" value="<?php echo $produto['nome']; ?>" required>
 
+    <br><br>
+
+    
