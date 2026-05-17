@@ -59,7 +59,15 @@ require 'includes/footer.php';
                 echo $produto['estoque'];
                 ?>
             </td>
+        </tr>
+
+        <?php }
+        ?>
+</table>
+
+<?php
+require_once 'includes/footer.php';
+?>
 
 
-    }
 
