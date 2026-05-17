@@ -7,3 +7,7 @@ $sql = "DELETE FROM produtos WHERE id = :id";
 
 $stmt = $pdo->prepare($sql);
 
+$stmt->execute([
+    ':id' => $id
+]);
+
