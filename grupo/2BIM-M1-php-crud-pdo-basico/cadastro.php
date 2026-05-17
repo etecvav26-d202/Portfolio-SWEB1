@@ -39,10 +39,14 @@ require_once 'includes/header.php';
 
     <br><br>
 
-    <label>fabricante</label>
+    <label>Fabricante</label>
     <input type="text" name="fabricante" required>
 
     <br><br>
     
-    
+    <label>Preço</label>
+    <input type="number" step="0.01" name="nome" required>
+
+    <br><br>
+
 
