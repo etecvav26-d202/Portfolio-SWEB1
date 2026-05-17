@@ -19,3 +19,4 @@ try {
     echo "Erro na conexão do servidor: " . $erro->getMessage();
 }
 
+?>
