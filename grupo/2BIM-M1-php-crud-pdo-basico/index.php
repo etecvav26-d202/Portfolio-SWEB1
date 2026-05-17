@@ -47,7 +47,15 @@ require 'includes/footer.php';
                 echo $produto['fabricante'];
                 ?>
             </td>
+
+            <td>
+                R$ <?php
+                echo $produto['preco'];
+                ?>
+            </td>
+
             
+
 
     }
 
