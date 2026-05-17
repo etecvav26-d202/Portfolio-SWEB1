@@ -56,4 +56,12 @@ require_once 'includes/header.php';
 
     <br><br>
 
+    <label>Fabricante</label>
+    <input type="text" name="fabricante" value="<?php echo $produto['fabricante']; ?>" required>
+
+    <br><br>
+
+    
+
+
     
