@@ -1,6 +1,7 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=farmacia_vav;charset=utf8";
+$servidor = "localhost";
+$banco = "farmavav";
 $usuario = "root";
 $senha = "";
 
