@@ -40,4 +40,9 @@ nav a{
     transition: 0.3s;
 }
 
+nav a:hover{
+    background: #023e8a;
+    transform: scale(1.05);
+}
+
 
