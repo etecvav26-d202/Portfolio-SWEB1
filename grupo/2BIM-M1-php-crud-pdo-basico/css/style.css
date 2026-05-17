@@ -30,3 +30,14 @@ nav{
     gap: 10px;
     flex-wrap: wrap;
 }
+
+nav a{
+    background: #3db1c9;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
