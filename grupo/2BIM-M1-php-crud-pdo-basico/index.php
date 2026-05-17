@@ -11,7 +11,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <?php
-require 'includes/footer.php';
+require 'includes/header.php';
 ?>
 
 <h2>Lista de Produtos</h2>
