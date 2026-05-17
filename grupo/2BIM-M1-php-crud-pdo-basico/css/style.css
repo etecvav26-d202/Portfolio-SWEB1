@@ -25,3 +25,8 @@ header h1{
     margin-bottom: 10px;
 }
 
+nav{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
