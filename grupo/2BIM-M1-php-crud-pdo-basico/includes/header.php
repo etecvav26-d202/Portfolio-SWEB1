@@ -7,7 +7,11 @@
     <title>FarmaVAV</title>
 </head>
 <body>
-    
+    <nav>
+        <strong>Etec Vasco Antônio Venchiarutti</strong>
+        <a href="index.php">Início</a>
+        <a href="inserir.php">Novo Contato</a>
+    </nav>
+    <hr>
 </body>
-
 </html>
