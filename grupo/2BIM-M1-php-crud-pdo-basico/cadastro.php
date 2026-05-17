@@ -21,6 +21,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         ':preco' => $preco;
         ':estoque' => $estoque
     ]);
-    
 
+    echo "Produto cadastro com sucesso.";
 }
