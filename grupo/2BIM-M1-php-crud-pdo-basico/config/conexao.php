@@ -13,8 +13,6 @@ try {
         $senha
     );
 
-    echo "Conexão realizada com sucesso!";
-
 } catch(PDOException $erro){
     echo "Erro na conexão do servidor: " . $erro->getMessage();
 }
