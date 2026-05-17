@@ -66,7 +66,14 @@ require_once 'includes/header.php';
 
     <br><br>
 
+    <label>Estoque</label>
+    <input type="text" name="estoque" value="<?php echo $produto['estoque']; ?>" required>
+
+    <br><br>
+
     
+
+
 
 
 
