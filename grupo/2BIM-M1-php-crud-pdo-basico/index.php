@@ -1,9 +1,10 @@
 <?php
-require 'config/conexao.php';
-require 'includes/header.php';
-?>
+require_once 'config/conexao.php';
 
-<h2>testando</h2>
+$sql = "SELECT * FROM produtos ORDER BY id DESC";
+
+
+
 
 <?php
 require 'includes/footer.php';
