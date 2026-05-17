@@ -54,4 +54,9 @@ require_once 'includes/header.php';
 
     <br><br>
 
+    <button type="submit">
+        Cadastrar
+    </button>
+
+</form>
 
