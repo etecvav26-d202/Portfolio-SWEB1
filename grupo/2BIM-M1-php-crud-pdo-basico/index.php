@@ -54,7 +54,11 @@ require 'includes/footer.php';
                 ?>
             </td>
 
-            
+            <td>
+                <?php
+                echo $produto['estoque'];
+                ?>
+            </td>
 
 
     }
