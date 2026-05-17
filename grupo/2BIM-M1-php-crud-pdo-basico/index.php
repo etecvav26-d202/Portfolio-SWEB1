@@ -66,7 +66,8 @@ require 'includes/header.php';
                 Editar
                 </a>
 
-                <a href="excluir.php?id=<?php echo $produto['id']; ?>">
+                <a href="excluir.php?id=<?php echo $produto['id']; ?>"
+                onclick="return confirm('Tem certeza que deseja excluir o produto?')">
                 Excluir
                 </a>
             </td>
