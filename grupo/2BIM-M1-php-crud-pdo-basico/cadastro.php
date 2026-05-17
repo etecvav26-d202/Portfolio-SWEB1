@@ -32,3 +32,11 @@ require_once 'includes/header.php';
 ?>
 
 <h2>Cadastrar Produto</h2>
+
+<form method="POST">
+    <label>Nome</label>
+    <input type="text" name="nome" required>
+
+    <br><br>
+
+    
