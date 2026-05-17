@@ -7,5 +7,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $preco = $_POST['preco'];
     $estoque = $_POST['estoque'];
 
+    $sql = "INSERT INTO produtos
+    (nome, fabricante, preco, estoque)
+
+    VAlUES
+    (: nome, :fabricante, :preco, :estoque)";
+    
 
 }
