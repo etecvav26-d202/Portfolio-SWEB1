@@ -45,7 +45,12 @@ require_once 'includes/header.php';
     <br><br>
     
     <label>Preço</label>
-    <input type="number" step="0.01" name="nome" required>
+    <input type="number" step="0.01" name="preco" required>
+
+    <br><br>
+
+    <label>Estoque</label>
+    <input type="text" name="estoque" required>
 
     <br><br>
 
