@@ -10,8 +10,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO produtos
     (nome, fabricante, preco, estoque)
 
-    VAlUES
-    (: nome, :fabricante, :preco, :estoque)";
+    VALUES
+    (:nome, :fabricante, :preco, :estoque)";
 
     $stmt = $pdo->prepare($sql);
 
@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         ':nome' => $nome;
         ':fabricante' => $fabricante;
         ':preco' => $preco;
-        ':estoque' => $estoque
+        ':estoque' => $estoque;
     ]);
 
     echo "Produto cadastro com sucesso.";
