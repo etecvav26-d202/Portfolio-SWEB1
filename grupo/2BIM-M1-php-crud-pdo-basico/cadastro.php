@@ -60,3 +60,7 @@ require_once 'includes/header.php';
 
 </form>
 
+<?php
+require_once 'includes/footer.php';
+?>
+
