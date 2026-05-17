@@ -7,7 +7,7 @@ $senha = "";
 
 try {
 
-    $conexao = new PDO(
+    $pdo = new PDO(
         "mysql:host=$servidor;dbname=$banco;charset=utf8",
         $usuario,
         $senha
