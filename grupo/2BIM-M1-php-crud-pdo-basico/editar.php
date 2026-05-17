@@ -71,7 +71,14 @@ require_once 'includes/header.php';
 
     <br><br>
 
-    
+    <button type="submit">
+        Salvar alterações
+    </button>
+
+</form>
+
+
+
 
 
 
