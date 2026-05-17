@@ -15,5 +15,6 @@ $produto = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $nome = $_POST['nome'];
+    $fabricante = $_POST['fabricante'];
     
 }
