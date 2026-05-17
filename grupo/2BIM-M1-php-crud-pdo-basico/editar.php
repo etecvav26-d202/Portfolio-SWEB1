@@ -42,3 +42,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     header("Location: index.php");
 }
 
+?>
+
+<?php
+require_once 'includes/header.php';
+?>
+
+<h2>Editar Produtos</h2>
+
+<form method="POST">
+    
+
