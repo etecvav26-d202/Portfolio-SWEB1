@@ -24,3 +24,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "Produto cadastro com sucesso.";
 }
+
+?>
+
+<?php
+require_once 'includes/header.php';
+?>
