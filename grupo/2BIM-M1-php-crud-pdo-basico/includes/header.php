@@ -14,5 +14,3 @@
         <a href="cadastro.php">Cadastrar</a>
     </nav>
     <hr>
-</body>
-</html>
