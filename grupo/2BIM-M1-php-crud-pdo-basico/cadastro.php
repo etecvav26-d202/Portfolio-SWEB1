@@ -12,6 +12,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     VAlUES
     (: nome, :fabricante, :preco, :estoque)";
-    
 
+    $stmt = $pdo->prepare($sql);
+
+    
 }
