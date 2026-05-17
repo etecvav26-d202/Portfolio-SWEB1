@@ -1,5 +1,5 @@
 <?php
-require_once 'config/conexao.php'
+require_once 'config/conexao.php';
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
@@ -16,10 +16,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $pdo->prepare($sql);
 
     $stmt->execute([
-        ':nome' => $nome;
-        ':fabricante' => $fabricante;
-        ':preco' => $preco;
-        ':estoque' => $estoque;
+        ':nome' => $nome,
+        ':fabricante' => $fabricante,
+        ':preco' => $preco,
+        ':estoque' => $estoque,
     ]);
 
     echo "Produto cadastro com sucesso.";
