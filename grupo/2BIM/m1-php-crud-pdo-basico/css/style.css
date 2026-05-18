@@ -30,11 +30,7 @@ header h1{
 }
 
 .logo{
-    width: 130px;
-    height: auto;
-    box-shadow: none;
-    border-radius: 0;
-    transition: 0.3s;
+    width: 55px;
 }
 
 .logo:hover{
