@@ -162,6 +162,9 @@ form{
 }
 
 label{
+    display: block;
+    margin-bottom: 6px;
+    color: #3b7f86;
     font-weight: bold;
 }
 
