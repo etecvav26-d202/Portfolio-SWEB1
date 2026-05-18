@@ -55,6 +55,16 @@ main{
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
+.mensagem-sucesso{
+    background: #d8f3dc;
+    color: #1b4332;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 6px solid #2d6a4f;
+    font-weight: bold;
+}
+
 h2{
     color: white;
     margin-bottom: 20px;
