@@ -35,7 +35,7 @@ require_once 'includes/header.php';
 <h2>Cadastrar Produto</h2>
 
 <?php if (isset($_GET['mensagem-sucesso'])): ?>
-    <p>Produto cadastrado com sucesso!</p>
+    <p class="mensagem-sucesso">Produto cadastrado com sucesso!</p>
 <?php endif; ?>
 
 <form method="POST">
