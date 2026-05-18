@@ -92,3 +92,8 @@ button{
     transition: 0.3s;
 }
 
+button:hover{
+    background: #0077b6;
+    transform: scale(1.02);
+}
+
