@@ -138,3 +138,17 @@ footer{
     text-align: center;
     color: #6b7280;
 }
+
+@media(min-width: 768px){
+    body{
+        padding: 40px;
+    }
+
+    main{
+        padding: 35px;
+    }
+
+    form{
+        max-width: 500px;
+    }
+}
