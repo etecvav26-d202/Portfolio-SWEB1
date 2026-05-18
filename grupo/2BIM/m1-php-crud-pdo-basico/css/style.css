@@ -17,7 +17,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 30px;
+    padding: 12px 35px;
 }
 
 header h1{
@@ -27,13 +27,23 @@ header h1{
 
 
 .logo{
-    width: 55px;
+    width: 45px;
+    height: auto;
+}
+
+.logo-area h1{
+    color: white;
+    font-size: 24px;
+    margin: 0;
 }
 
 .logo-area{
     color: white;
     font-size: 32px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .menu{
