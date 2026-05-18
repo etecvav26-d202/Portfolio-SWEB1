@@ -80,3 +80,15 @@ input:focus{
     border-color: #04afd1;
     box-shadow: 0 0 10px rgba(0,180,216,0.3)
 }
+
+button{
+    background: #00b4d8;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
