@@ -14,20 +14,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 28px;
+    padding: 18px 30px;
 }
 
 header h1{
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 0px;
 }
 
-.topo-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
 
 .logo{
     width: 55px;
@@ -59,37 +53,8 @@ header h1{
     background-color: #2f6a70;
 }
 
-
-
-nav{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    border-bottom: 2px solid rgba(255,255,255,0.7);
-    padding-bottom: 20px;
-    margin-bottom: 25px;
-}
-
-nav a{
-    background: #3db1c9;
-    color: white;
-    text-decoration: none;
-    padding: 10px 16px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-nav a:hover{
-    background: #023e8a;
-    transform: scale(1.05);
-}
-
 main{
-    background: white;
-    padding-top: 100px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    flex: 1;
+    padding-top: 35px;
 }
 
 .mensagem-sucesso{
@@ -111,7 +76,8 @@ h2{
 .cards-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 34px;
+    gap: 35px;
+    margin-top: 20px;
 }
 
 .card-produto{
