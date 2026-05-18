@@ -20,28 +20,26 @@ header{
     padding: 12px 35px;
 }
 
-header h1{
-    font-size: 28px;
-    margin-bottom: 0px;
-}
-
 
 .logo{
     width: 45px;
     height: auto;
+    display: block;
 }
 
 .logo-area h1{
     color: white;
     font-size: 24px;
     margin: 0;
+    white-space: nowrap;
 }
 
 .logo-area{
     color: white;
     font-size: 32px;
     font-weight: bold;
-    display: flex;
+    display: flex !important;
+    flex-direction: row;
     align-items: center;
     gap: 12px;
 }
