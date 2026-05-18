@@ -121,3 +121,10 @@ tr:nth-child(even){
     background: #f8ffff;
 }
 
+td a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
