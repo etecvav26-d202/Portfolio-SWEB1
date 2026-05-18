@@ -29,6 +29,9 @@ nav{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    border-bottom: 2px solid rgba(255,255,255,0.7);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 nav a{
@@ -53,8 +56,9 @@ main{
 }
 
 h2{
-    color: #0085b2;
+    color: #051f41;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 form{
