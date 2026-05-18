@@ -78,7 +78,7 @@ h2{
     grid-template-columns: repeat(3, 320px);
     gap: 35px;
     margin-top: 20px;
-    justify-content: last baseline;
+    justify-content: center;
 }
 
 .card-produto{
