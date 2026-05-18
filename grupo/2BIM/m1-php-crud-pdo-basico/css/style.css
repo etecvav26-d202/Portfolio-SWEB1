@@ -9,6 +9,10 @@ body{
     background: #eef8f8;
     color: #1f2937;
     padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 header{
