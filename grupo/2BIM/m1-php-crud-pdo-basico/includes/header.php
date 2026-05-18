@@ -8,7 +8,6 @@
 </head>
 <body>
     <header>
-    <div class="topo">
 
     <div class="logo-area">
         <img src="img/vav_logo.png" class="logo">
