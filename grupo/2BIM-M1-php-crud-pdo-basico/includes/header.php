@@ -13,4 +13,3 @@
         <a href="index.php">Início</a>
         <a href="cadastro.php">Cadastrar</a>
     </nav>
-    <hr>
