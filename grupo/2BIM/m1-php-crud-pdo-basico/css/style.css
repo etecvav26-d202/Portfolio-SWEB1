@@ -125,6 +125,19 @@ h2{
     justify-content: space-between;
 }
 
+.top-card{
+    background-color: #3c858b;
+    padding: 10px 18px;
+}
+
+.top-card h3{
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
 form{
     display: flex;
     flex-direction: column;
