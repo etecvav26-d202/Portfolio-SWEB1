@@ -62,3 +62,8 @@ form{
     flex-direction: column;
     gap: 12px;
 }
+
+label{
+    font-weight: bold;
+}
+
