@@ -7,6 +7,9 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #dfe6e6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -55,6 +58,7 @@ header h1{
 
 main{
     padding: 40px 60px;
+    flex: 1;
 }
 
 .mensagem-sucesso{
@@ -207,7 +211,7 @@ footer{
     color: white;
     text-align: center;
     padding: 14px;
-    margin-top: 40px;
+    margin-top: auto;
     font-size: 15px;
 }
 
