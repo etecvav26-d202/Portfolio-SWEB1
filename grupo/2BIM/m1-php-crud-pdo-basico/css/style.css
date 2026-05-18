@@ -141,45 +141,33 @@ button:hover{
     transform: scale(1.02);
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    width: 250px;
     background: white;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-th{
-    background: #0096c7;
-    color: white;
     padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-td{
-    padding: 15px;
-    border-bottom: 1px solid #e5e7eb;
-    color: #1f2937;
+.card h3{
+    margin-top: 0;
 }
 
-tr{
-    background: white;
+.acoes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-tr:nth-child(even){
-    background: #f8ffff;
-}
-
-td a{
+.acoes a{
     text-decoration: none;
-    color: #0077b6;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-
-td a:hover{
-    color: #023e8a;
+    color: blue;
 }
 
 footer{
