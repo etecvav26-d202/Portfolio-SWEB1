@@ -128,3 +128,9 @@ td a{
     margin-right: 10px;
 }
 
+
+td a:hover{
+    color: #023e8a;
+}
+
+
