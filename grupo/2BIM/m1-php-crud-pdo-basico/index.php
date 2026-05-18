@@ -57,7 +57,9 @@ require 'includes/header.php';
             onclick="return confirm('Tem certeza que deseja excluir o produto?')">
                 Excluir
             </a>
-
+        
+        </div>
+        
         </div>
 
     </div>
