@@ -31,11 +31,6 @@ require 'includes/header.php';
         </p>
 
         <p>
-            <strong>Nome:</strong>
-            <?php echo $produto['nome']; ?>
-        </p>
-
-        <p>
             <strong>Fabricante:</strong>
             <?php echo $produto['fabricante']; ?>
         </p>
