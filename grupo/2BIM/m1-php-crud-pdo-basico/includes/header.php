@@ -14,8 +14,12 @@
         <img src="img/vav_logo.png" class="logo">
         <h1>Farmácia VAV</h1>
     </div>
-    
-    <nav>
+
+    <nav class="menu">
         <a href="index.php">Início</a>
         <a href="cadastro.php">Cadastrar</a>
     </nav>
+
+</header>
+
+<main class="conteudo">
