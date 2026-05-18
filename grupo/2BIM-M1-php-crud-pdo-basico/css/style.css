@@ -75,3 +75,8 @@ input{
     transition: 0.3s;
 }
 
+input:focus{
+    outline: none;
+    border-color: #04afd1;
+    box-shadow: 0 0 10px rgba(0,180,216,0.3)
+}
