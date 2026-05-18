@@ -8,10 +8,13 @@
 </head>
 <body>
     <header>
-    <div class="topo-header">
-        <h1>Farmácia VAV</h1>
+    <div class="topo">
+
+    <div class="logo-area">
         <img src="img/vav_logo.png" class="logo">
+        <h1>Farmácia VAV</h1>
     </div>
+    
     <nav>
         <a href="index.php">Início</a>
         <a href="cadastro.php">Cadastrar</a>
