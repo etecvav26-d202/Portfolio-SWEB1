@@ -97,3 +97,11 @@ button:hover{
     transform: scale(1.02);
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
