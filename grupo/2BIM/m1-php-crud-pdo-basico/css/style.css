@@ -33,8 +33,10 @@ header h1{
     width: 55px;
 }
 
-.logo:hover{
-    transform: scale(1.05);
+.logo-area{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 
