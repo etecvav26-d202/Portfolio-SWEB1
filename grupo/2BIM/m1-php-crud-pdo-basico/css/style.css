@@ -20,9 +20,6 @@ header{
     padding: 12px 35px;
 }
 
-header h1{
-    width: 30px;
-}
 
 .logo{
     width: 45px;
@@ -32,7 +29,7 @@ header h1{
 
 .logo-area h1{
     color: white;
-    font-size: 24px;
+    font-size: 32px;
     margin: 0;
     white-space: nowrap;
 }
