@@ -75,9 +75,10 @@ h2{
 
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 320px);
     gap: 35px;
     margin-top: 20px;
+    justify-content: last baseline;
 }
 
 .card-produto{
@@ -85,7 +86,7 @@ h2{
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-    min-height: 250px;
+    min-height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
