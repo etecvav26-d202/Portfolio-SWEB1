@@ -82,6 +82,7 @@ main{
     padding-top: 100px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    flex: 1;
 }
 
 .mensagem-sucesso{
@@ -184,7 +185,9 @@ td a:hover{
 footer{
     margin-top: 25px;
     text-align: center;
-    color: #6b7280;
+    color: #9398a1;
+    background: #111;
+    padding: 15px;
 }
 
 @media(min-width: 768px){
