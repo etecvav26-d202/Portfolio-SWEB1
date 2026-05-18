@@ -21,10 +21,12 @@ require 'includes/header.php';
     foreach($produtos as $produto){
         ?>
         <div class="card-produto">
-            <h3>
-            <?php echo $produto['nome']; ?>
-        </h3>
+            
+        <div class="top-card">
+        <h3><?php echo $produto['nome']; ?></h3>
+    </div>
 
+    <div class="conteudo-card">
         <p>
             <strong>ID:</strong>
             <?php echo $produto['id']; ?>
