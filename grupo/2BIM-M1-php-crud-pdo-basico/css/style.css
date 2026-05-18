@@ -105,3 +105,10 @@ table{
     border-radius: 15px;
     overflow: hidden;
 }
+
+th{
+    background: #0096c7;
+    color: white;
+    padding: 15px;
+}
+
