@@ -39,6 +39,27 @@ header h1{
     font-weight: bold;
 }
 
+.menu{
+    display: flex;
+    gap: 18px;
+}
+
+.menu a{
+    background-color: #3b7f86;
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background-color: #2f6a70;
+}
+
+
 
 nav{
     display: flex;
