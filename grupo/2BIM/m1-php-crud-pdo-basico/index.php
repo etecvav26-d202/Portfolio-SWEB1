@@ -21,7 +21,36 @@ require 'includes/header.php';
     foreach($produtos as $produto){
         ?>
         <div class="card-produto">
+            <h3>
+            <?php echo $produto['nome']; ?>
+        </h3>
 
+        <p>
+            <strong>ID:</strong>
+            <?php echo $produto['id']; ?>
+        </p>
+
+        <p>
+            <strong>Nome:</strong>
+            <?php echo $produto['nome']; ?>
+        </p>
+
+        <p>
+            <strong>Fabricante:</strong>
+            <?php echo $produto['fabricante']; ?>
+        </p>
+
+        <p>
+            <strong>Preço:</strong>
+            R$ <?php echo $produto['preco']; ?>
+        </p>
+
+        <p>
+            <strong>Estoque:</strong>
+            <?php echo $produto['estoque']; ?>
+        </p>
+
+        
 
 
 <?php
