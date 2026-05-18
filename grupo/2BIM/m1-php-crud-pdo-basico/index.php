@@ -50,8 +50,26 @@ require 'includes/header.php';
             <?php echo $produto['estoque']; ?>
         </p>
 
-        
+        <div class="acoes">
 
+            <a href="editar.php?id=<?php echo $produto['id']; ?>">
+                Editar
+            </a>
+
+            <a href="excluir.php?id=<?php echo $produto['id']; ?>"
+            onclick="return confirm('Tem certeza que deseja excluir o produto?')">
+                Excluir
+            </a>
+
+        </div>
+
+    </div>
+
+<?php
+}
+?>
+
+</div>
 
 <?php
 require_once 'includes/footer.php';
