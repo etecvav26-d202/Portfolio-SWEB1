@@ -114,7 +114,12 @@ th{
 
 td{
     padding: 15px;
-    border-bottom: 1px solid #e5e7eb
+    border-bottom: 1px solid #e5e7eb;
+    color: #1f2937;
+}
+
+tr{
+    background: white;
 }
 
 tr:nth-child(even){
