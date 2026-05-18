@@ -213,14 +213,25 @@ button:hover{
 
 .acoes{
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    gap: 12px;
+    padding: 0 20px 20px 20px;
 }
 
 .acoes a{
+    background-color: white;
+    color: #3c858b;
     text-decoration: none;
-    color: blue;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
 }
+
+.acoes a:hover{
+    background-color: #e5f1f1;
+}
+
 
 footer{
     margin-top: 25px;
