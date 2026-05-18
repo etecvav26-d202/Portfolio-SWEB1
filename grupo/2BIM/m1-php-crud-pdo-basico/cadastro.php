@@ -22,7 +22,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         ':estoque' => $estoque,
     ]);
 
-    echo "<p class='mensagem-sucesso'>Produto cadastrado com sucesso!</p>";
+    echo "<script>window.location.href='cadastro.php?mensagem-sucesso=1';</script>";
+    exit;
 }
 
 ?>
@@ -32,6 +33,10 @@ require_once 'includes/header.php';
 ?>
 
 <h2>Cadastrar Produto</h2>
+
+<?php if (isset($_GET['mensagem-sucesso'])): ?>
+    <p>Produto cadastrado com sucesso!</p>
+<?php endif; ?>
 
 <form method="POST">
     <label>Nome</label>
