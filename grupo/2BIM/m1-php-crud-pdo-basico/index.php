@@ -17,7 +17,13 @@ require 'includes/header.php';
 <h2>Lista de Produtos</h2>
 
 <div class="cards-container">
-    
+    <?php
+    foreach($produtos as $produto){
+        ?>
+        <div class="card-produto">
+
+
+
 <?php
 require_once 'includes/footer.php';
 ?>
