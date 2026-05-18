@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         ':estoque' => $estoque,
     ]);
 
-    echo "<p>Produto cadastro com sucesso!</p>";
+    echo "<p class='mensagem-sucesso'>Produto cadastrado com sucesso!</p>";
 }
 
 ?>
