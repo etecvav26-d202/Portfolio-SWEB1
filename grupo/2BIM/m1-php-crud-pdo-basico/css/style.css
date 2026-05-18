@@ -20,6 +20,9 @@ header{
     padding: 12px 35px;
 }
 
+header h1{
+    width: 30px;
+}
 
 .logo{
     width: 45px;
