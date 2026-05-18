@@ -137,6 +137,21 @@ h2{
     font-weight: bold;
 }
 
+.conteudo-card{
+    padding: 14px 20px;
+}
+
+.conteudo-card p{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.conteudo-card strong{
+    font-size: 18px;
+}
+
 
 form{
     display: flex;
