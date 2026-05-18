@@ -54,7 +54,7 @@ header h1{
 }
 
 main{
-    padding-top: 35px;
+    padding: 40px 60px;
 }
 
 .mensagem-sucesso{
@@ -69,7 +69,8 @@ main{
 
 h2{
     color: #3b7f86;
-    margin-bottom: 22px;
+    margin-bottom: 35px;
+    margin-left: 5px;
     font-size: 30px;
 }
 
