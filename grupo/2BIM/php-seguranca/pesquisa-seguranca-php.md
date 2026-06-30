@@ -75,3 +75,5 @@ Essas funções são aplicadas em situações práticas onde dados binários pre
 
 ## 5. Criptografia no PHP
 
+Para cenários onde dados confidenciais precisam ser armazenados de forma protegida, mas com a necessidade de recuperação posterior (como o número de um documento ou dados de pagamento), o PHP utiliza a extensão OpenSSL. O OpenSSL é uma biblioteca de código aberto robusta e amplamente adotada no mercado que implementa funções criptográficas avançadas e os protocolos TLS/SSL para comunicação segura na internet.
+
