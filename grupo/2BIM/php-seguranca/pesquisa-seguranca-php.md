@@ -38,3 +38,4 @@ Compreender as distinções entre criptografia, funções de hash e codificaçã
 
 **Criptografia:**   
 
+A criptografia é um processo bidirecional projetado para garantir a confidencialidade. Ela transforma um texto claro em um texto cifrado por meio de um algoritmo e de uma chave secreta. O dado pode ser revertido à sua forma original (descriptografado) desde que se possua a respectiva chave. Um exemplo prático de sua utilização ocorre no protocolo HTTPS, que criptografa o tráfego entre o navegador do usuário e o servidor web para que terceiros não interceptem as informações.
