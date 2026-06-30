@@ -81,5 +81,7 @@ No PHP, essa biblioteca serve para realizar operações de criptografia simétri
 
 ## 6. Proteção de Senhas
 
+O armazenamento correto de senhas exige que as credenciais nunca, sob hipótese alguma, sejam salvas em texto puro (texto limpo). Se um banco de dados for comprometido e as senhas estiverem expostas sem proteção, todas as contas dos usuários estarão imediatamente sob o controle de invasores. Portanto, o padrão correto exige a aplicação de um algoritmo de hash seguro e lento antes de salvar o registro no banco.
+
 
 
