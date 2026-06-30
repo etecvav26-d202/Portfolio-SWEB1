@@ -97,3 +97,5 @@ O desenvolvimento seguro em PHP exige a adoção de contra-medidas específicas 
 
 - **Cross-Site Request Forgery (CSRF):** Consiste em forçar o navegador de um usuário autenticado a realizar ações indesejadas em um site no qual ele confia (como transferir fundos ou alterar uma senha sem perceber). A prevenção padrão no PHP envolve a geração e validação de tokens CSRF — valores únicos, aleatórios e temporários associados à sessão do usuário que devem ser enviados em cada requisição de formulário.
 
+## 8. Aplicações Práticas
+
