@@ -32,3 +32,4 @@ Proteger os dados dos usuários é uma obrigação tanto técnica quanto legal e
 
 Os principais riscos enfrentados por aplicações desenvolvidas para a Internet derivam, em grande parte, de falhas de lógica no código ou de configurações inadequadas nos servidores. Entre as ameaças mais recorrentes mapeadas por consórcios globais como o OWASP, destacam-se a injeção de scripts e comandos maliciosos, a quebra de autenticação (permitindo o sequestro de contas), o vazamento de dados sensíveis por falta de criptografia em trânsito ou repouso, e a exposição de interfaces de programação (APIs) sem o devido controle de acesso.
 
+## 2. Criptografia, Hash e Codificação
