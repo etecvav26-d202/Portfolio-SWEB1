@@ -65,3 +65,11 @@ Para cenários que não envolvem senhas, o PHP disponibiliza a função ```hash(
 Essas funções devem ser utilizadas em momentos bem definidos: ```password_hash()``` e ```password_verify()``` entram em ação estritamente no cadastro e no login de usuários, enquanto ```hash()``` atua em rotinas de checagem de arquivos e assinaturas digitais.
 
 Atualmente, os algoritmos recomendados pela comunidade de segurança e definidos como padrão no PHP são o **Bcrypt** e o **Argon2id**. Diferente de algoritmos antigos como MD5 e SHA1, que se tornaram obsoletos por serem excessivamente rápidos e vulneráveis a ataques de colisão, o Bcrypt e o Argon2id são intencionalmente projetados para serem lentos e exigirem alto consumo de hardware (processamento e memória). Isso inviabiliza ataques massivos de força bruta.
+
+## 4. Funções de Codificação
+
+No ecossistema do PHP, as funções ```base64_encode()``` e ```base64_decode()``` são amplamente utilizadas para manipular dados textuais e binários.
+
+**```base64_encode()```:**
+
+A função ```base64_encode()``` serve para converter qualquer conjunto de dados em uma representação de caracteres ASCII legíveis.
