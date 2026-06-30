@@ -39,3 +39,8 @@ Compreender as distinções entre criptografia, funções de hash e codificaçã
 **Criptografia:**   
 
 A criptografia é um processo bidirecional projetado para garantir a confidencialidade. Ela transforma um texto claro em um texto cifrado por meio de um algoritmo e de uma chave secreta. O dado pode ser revertido à sua forma original (descriptografado) desde que se possua a respectiva chave. Um exemplo prático de sua utilização ocorre no protocolo HTTPS, que criptografa o tráfego entre o navegador do usuário e o servidor web para que terceiros não interceptem as informações.
+
+**Hash:**   
+
+O hash, por outro lado, é um mecanismo estritamente unidirecional. Ele recebe um dado de qualquer tamanho e o transforma em uma sequência de caracteres de comprimento fixo. O processo é irreversível, o que significa que é computacionalmente inviável recuperar o dado original a partir do hash gerado. Além disso, o hash é determinístico: a mesma entrada sempre produzirá exatamente o mesmo resultado. O exemplo de uso mais comum é o armazenamento de senhas em bancos de dados, onde o sistema valida o acesso comparando os hashes, sem nunca precisar conhecer a senha real em texto puro.
+
