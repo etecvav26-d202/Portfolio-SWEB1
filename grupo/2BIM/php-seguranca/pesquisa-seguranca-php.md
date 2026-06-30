@@ -121,3 +121,6 @@ Para construir e manter aplicações escritas em PHP que sejam resilientes a ata
 
 - **Forçar o uso de HTTPS:** Utilizar certificados SSL/TLS para criptografar todo o tráfego entre o cliente e o servidor, protegendo dados em trânsito.
 
+- **Manter o PHP atualizado:** Utilizar sempre as versões ativas e suportadas oficialmente pela comunidade do PHP, garantindo a correção imediata de vulnerabilidades de segurança descobertas no núcleo da linguagem.
+
+- **Proteger arquivos de configuração:** Armazenar credenciais de bancos de dados e chaves secretas em arquivos ```.env``` localizados fora do diretório público da aplicação (```public_html``` ou ```web```), impedindo o acesso direto via navegador.
