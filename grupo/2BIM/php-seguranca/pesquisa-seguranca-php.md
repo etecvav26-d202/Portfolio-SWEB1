@@ -117,3 +117,5 @@ Para construir e manter aplicações escritas em PHP que sejam resilientes a ata
 
 - **Utilizar Consultas Preparadas (Prepared Statements):** Adotar o PDO como padrão para toda e qualquer interação com o banco de dados.
 
+- **Proteger as sessões do usuário:** Configurar diretivas seguras no arquivo ```php.ini```, como ```session.cookie_httponly``` (impede o acesso às sessões via JavaScript) e ```session.cookie_secure``` (garante que os cookies de sessão trafeguem apenas via HTTPS).
+
