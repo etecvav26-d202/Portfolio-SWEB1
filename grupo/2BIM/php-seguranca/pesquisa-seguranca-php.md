@@ -44,3 +44,6 @@ A criptografia é um processo bidirecional projetado para garantir a confidencia
 
 O hash, por outro lado, é um mecanismo estritamente unidirecional. Ele recebe um dado de qualquer tamanho e o transforma em uma sequência de caracteres de comprimento fixo. O processo é irreversível, o que significa que é computacionalmente inviável recuperar o dado original a partir do hash gerado. Além disso, o hash é determinístico: a mesma entrada sempre produzirá exatamente o mesmo resultado. O exemplo de uso mais comum é o armazenamento de senhas em bancos de dados, onde o sistema valida o acesso comparando os hashes, sem nunca precisar conhecer a senha real em texto puro.
 
+**Codificação:**   
+
+A codificação (encoding) difere completamente dos conceitos anteriores por não possuir nenhum propósito de segurança. Trata-se de uma transformação pública e reversível utilizada apenas para garantir a compatibilidade e a integridade da transmissão de dados entre diferentes sistemas e protocolos. Qualquer pessoa pode decodificar o dado sem a necessidade de chaves. Um exemplo clássico é a codificação URL, que substitui caracteres especiais (como espaços por ```%20```) para garantir que os endereços da web sejam interpretados corretamente pelos navegadores.
