@@ -50,15 +50,15 @@ A codificação (encoding) difere completamente dos conceitos anteriores por nã
 
 ## 3. Funções de Hash no PHP
 
-**```password_hash()```:**   
+- **```password_hash()```:**   
 
 A linguagem PHP fornece funções nativas robustas para o tratamento e geração de hashes, divididas entre o uso genérico e o tratamento específico de credenciais de acesso. A função ```password_hash()``` foi desenvolvida com o propósito exclusivo de criar hashes de senhas de forma altamente segura. Ela gerencia automaticamente a aplicação de algoritmos fortes e a criação de componentes aleatórios de segurança. 
 
-**```password_verify()```:**   
+- **```password_verify()```:**   
 
 Complementarmente, a função ```password_verify()``` é utilizada no momento da autenticação para verificar se uma senha fornecida pelo usuário corresponde ao hash seguro previamente armazenado.
 
-**```hash()```:** 
+- **```hash()```:** 
 
 Para cenários que não envolvem senhas, o PHP disponibiliza a função ```hash()```. Ela serve para gerar hashes genéricos utilizando algoritmos de uso geral (como a família SHA) e é frequentemente empregada para verificar a integridade de arquivos ou criar identificadores únicos de dados não confidenciais.
 
@@ -73,3 +73,7 @@ No ecossistema do PHP, as funções ```base64_encode()``` e ```base64_decode()``
 - **```base64_encode()```:** A função ```base64_encode()``` serve para converter qualquer conjunto de dados em uma representação de caracteres ASCII legíveis.
 
 - **```base64_decode()```:** A função ```base64_decode()``` realiza o processo inverso, devolvendo o dado ao seu formato original.
+
+Essas funções são aplicadas em situações práticas onde dados binários precisam ser transmitidos por canais que foram originalmente desenhados para lidar apenas com texto. Um caso de uso comum é a inclusão de imagens diretamente no corpo de documentos HTML ou XML, ou o envio de arquivos anexos através de protocolos de e-mail (como o SMTP).
+
+É um erro conceitual grave classificar o Base64 como uma forma de criptografia. O Base64 não visa ocultar informações ou restringir o acesso a elas; seu algoritmo é amplamente conhecido, público e não faz uso de chaves secretas ou senhas para realizar a conversão. Portanto, qualquer dado codificado em Base64 pode ser decodificado instantaneamente por qualquer sistema ou usuário, não oferecendo nenhuma camada de confidencialidade.
