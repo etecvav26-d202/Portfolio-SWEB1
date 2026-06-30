@@ -62,3 +62,6 @@ Complementarmente, a função ```password_verify()``` é utilizada no momento da
 
 Para cenários que não envolvem senhas, o PHP disponibiliza a função ```hash()```. Ela serve para gerar hashes genéricos utilizando algoritmos de uso geral (como a família SHA) e é frequentemente empregada para verificar a integridade de arquivos ou criar identificadores únicos de dados não confidenciais.
 
+Essas funções devem ser utilizadas em momentos bem definidos: ```password_hash()``` e ```password_verify()``` entram em ação estritamente no cadastro e no login de usuários, enquanto ```hash()``` atua em rotinas de checagem de arquivos e assinaturas digitais.
+
+Atualmente, os algoritmos recomendados pela comunidade de segurança e definidos como padrão no PHP são o **Bcrypt** e o **Argon2id**. Diferente de algoritmos antigos como MD5 e SHA1, que se tornaram obsoletos por serem excessivamente rápidos e vulneráveis a ataques de colisão, o Bcrypt e o Argon2id são intencionalmente projetados para serem lentos e exigirem alto consumo de hardware (processamento e memória). Isso inviabiliza ataques massivos de força bruta.
