@@ -108,3 +108,6 @@ Os mecanismos de segurança descritos são a base operacional de praticamente to
 - **Redes Sociais e Sistemas Escolares:** Manipulam grandes volumes de informações pessoais e de propriedade intelectual. Utilizam a codificação Base64 para tráfego interno de mídias e documentos, combinada com sanitização estrita contra XSS para evitar que publicações de usuários ou mensagens em fóruns escolares espalhem vírus ou scripts de roubo de cookies.
 
 A aplicação dessas técnicas nesses sistemas é vital porque a falha em qualquer um desses pontos pode resultar em severas violações de privacidade, fraudes financeiras massivas e a destruição da confiança do usuário na plataforma.
+
+## 9. Boas Práticas de Segurança
+
