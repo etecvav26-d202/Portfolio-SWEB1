@@ -94,3 +94,6 @@ O desenvolvimento seguro em PHP exige a adoção de contra-medidas específicas 
 - **SQL Injection:** Ocorre quando um invasor insere comandos SQL maliciosos em campos de entrada de texto, manipulando as consultas enviadas ao banco de dados. A prevenção absoluta no PHP é feita através do uso de Prepared Statements (consultas preparadas) utilizando extensões como PDO ou MySQLi. Com isso, os dados do usuário são tratados estritamente como parâmetros e nunca como parte executável do comando SQL.
 
 - **Cross-Site Scripting (XSS):** Ocorre quando a aplicação aceita dados maliciosos de um usuário e os exibe para outros visitantes sem a devida filtragem, permitindo a execução de códigos JavaScript maliciosos nos navegadores das vítimas. A prevenção consiste em escapar e sanitizar todas as saídas de dados antes de renderizá-las na tela, utilizando funções nativas como ```htmlspecialchars()```.
+
+- **Cross-Site Request Forgery (CSRF):** Consiste em forçar o navegador de um usuário autenticado a realizar ações indesejadas em um site no qual ele confia (como transferir fundos ou alterar uma senha sem perceber). A prevenção padrão no PHP envolve a geração e validação de tokens CSRF — valores únicos, aleatórios e temporários associados à sessão do usuário que devem ser enviados em cada requisição de formulário.
+
