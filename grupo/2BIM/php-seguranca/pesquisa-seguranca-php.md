@@ -89,3 +89,7 @@ Para que um algoritmo de hash seja considerado seguro para senhas, ele deve poss
 
 ## 7. Proteção contra Ataques
 
+O desenvolvimento seguro em PHP exige a adoção de contra-medidas específicas para mitigar os principais ataques da web:
+
+- **SQL Injection:** Ocorre quando um invasor insere comandos SQL maliciosos em campos de entrada de texto, manipulando as consultas enviadas ao banco de dados. A prevenção absoluta no PHP é feita através do uso de Prepared Statements (consultas preparadas) utilizando extensões como PDO ou MySQLi. Com isso, os dados do usuário são tratados estritamente como parâmetros e nunca como parte executável do comando SQL.
+
