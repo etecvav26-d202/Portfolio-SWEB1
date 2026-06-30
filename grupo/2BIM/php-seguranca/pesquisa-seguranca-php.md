@@ -50,18 +50,17 @@ A codificação (encoding) difere completamente dos conceitos anteriores por nã
 
 ## 3. Funções de Hash no PHP
 
-- **```password_hash()```:**   
+**```password_hash()```:**   
 
 A linguagem PHP fornece funções nativas robustas para o tratamento e geração de hashes, divididas entre o uso genérico e o tratamento específico de credenciais de acesso. A função ```password_hash()``` foi desenvolvida com o propósito exclusivo de criar hashes de senhas de forma altamente segura. Ela gerencia automaticamente a aplicação de algoritmos fortes e a criação de componentes aleatórios de segurança. 
 
-- **```password_verify()```:**   
+**```password_verify()```:**   
 
 Complementarmente, a função ```password_verify()``` é utilizada no momento da autenticação para verificar se uma senha fornecida pelo usuário corresponde ao hash seguro previamente armazenado.
 
-- **```hash()```:** 
+**```hash()```:** 
 
 Para cenários que não envolvem senhas, o PHP disponibiliza a função ```hash()```. Ela serve para gerar hashes genéricos utilizando algoritmos de uso geral (como a família SHA) e é frequentemente empregada para verificar a integridade de arquivos ou criar identificadores únicos de dados não confidenciais.
-
 
 Essas funções devem ser utilizadas em momentos bem definidos: ```password_hash()``` e ```password_verify()``` entram em ação estritamente no cadastro e no login de usuários, enquanto ```hash()``` atua em rotinas de checagem de arquivos e assinaturas digitais.
 
