@@ -83,5 +83,7 @@ No PHP, essa biblioteca serve para realizar operações de criptografia simétri
 
 O armazenamento correto de senhas exige que as credenciais nunca, sob hipótese alguma, sejam salvas em texto puro (texto limpo). Se um banco de dados for comprometido e as senhas estiverem expostas sem proteção, todas as contas dos usuários estarão imediatamente sob o controle de invasores. Portanto, o padrão correto exige a aplicação de um algoritmo de hash seguro e lento antes de salvar o registro no banco.
 
+Um componente indispensável nesse processo é o **Salt** (sal). O salt consiste em uma sequência de caracteres aleatórios gerada automaticamente para cada usuário e mesclada à senha antes da execução do hash. A presença do salt garante que, mesmo se dois usuários escolherem a mesma senha (como "123456"), os hashes resultantes gravados no banco serão completamente diferentes. Isso neutraliza ataques baseados em Rainbow Tables, que são tabelas pré-computadas com milhões de hashes de senhas comuns.
+
 
 
