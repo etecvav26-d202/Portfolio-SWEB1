@@ -115,3 +115,5 @@ Para construir e manter aplicações escritas em PHP que sejam resilientes a ata
 
 - **Validar e filtrar todas as entradas:** Nunca confiar em qualquer dado vindo do usuário (sejam formulários, URLs ou cookies). Use ```filter_var()``` para garantir que e-mails, números e URLs estejam nos formatos corretos.
 
+- **Utilizar Consultas Preparadas (Prepared Statements):** Adotar o PDO como padrão para toda e qualquer interação com o banco de dados.
+
