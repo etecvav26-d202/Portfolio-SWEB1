@@ -85,5 +85,5 @@ O armazenamento correto de senhas exige que as credenciais nunca, sob hipótese 
 
 Um componente indispensável nesse processo é o **Salt** (sal). O salt consiste em uma sequência de caracteres aleatórios gerada automaticamente para cada usuário e mesclada à senha antes da execução do hash. A presença do salt garante que, mesmo se dois usuários escolherem a mesma senha (como "123456"), os hashes resultantes gravados no banco serão completamente diferentes. Isso neutraliza ataques baseados em Rainbow Tables, que são tabelas pré-computadas com milhões de hashes de senhas comuns.
 
-
+Para que um algoritmo de hash seja considerado seguro para senhas, ele deve possuir alta resistência a colisões (duas entradas diferentes gerarem o mesmo hash) e possuir um "fator de custo" ajustável. Esse custo obriga o computador a realizar milhares de ciclos de processamento para gerar um único hash, tornando o processo lento o suficiente para impedir que invasores testem bilhões de combinações por segundo em ataques de força bruta.
 
