@@ -38,7 +38,7 @@ Portfolio-SWEB1/
     │
     └── 2BIM/
         │
-        └── pesquisa-seguranca-php/
+        └── php-seguranca/
             │
             ├── README.md
             ├── pesquisa-seguranca-php.md
