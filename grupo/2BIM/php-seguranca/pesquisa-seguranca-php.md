@@ -79,3 +79,7 @@ Para cenários onde dados confidenciais precisam ser armazenados de forma proteg
 
 No PHP, essa biblioteca serve para realizar operações de criptografia simétrica e assimétrica, geração de chaves e assinaturas digitais. Quando um desenvolvedor precisa criptografar informações confidenciais para que fiquem ilegíveis no banco de dados, utiliza-se a função ```openssl_encrypt()```. Quando a aplicação legítima precisa ler esse dado novamente para exibi-lo ao usuário ou processá-lo, utiliza-se a função ```openssl_decrypt()```. O padrão de mercado recomendado para essas operações é o algoritmo AES-256 (Advanced Encryption Standard) operando em modos seguros como o GCM ou CBC.
 
+## 6. Proteção de Senhas
+
+
+
