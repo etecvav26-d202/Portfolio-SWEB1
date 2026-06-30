@@ -47,3 +47,6 @@ O hash, por outro lado, é um mecanismo estritamente unidirecional. Ele recebe u
 **Codificação:**   
 
 A codificação (encoding) difere completamente dos conceitos anteriores por não possuir nenhum propósito de segurança. Trata-se de uma transformação pública e reversível utilizada apenas para garantir a compatibilidade e a integridade da transmissão de dados entre diferentes sistemas e protocolos. Qualquer pessoa pode decodificar o dado sem a necessidade de chaves. Um exemplo clássico é a codificação URL, que substitui caracteres especiais (como espaços por ```%20```) para garantir que os endereços da web sejam interpretados corretamente pelos navegadores.
+
+## 3. Funções de Hash no PHP
+
