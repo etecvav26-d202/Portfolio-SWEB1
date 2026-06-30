@@ -24,3 +24,7 @@ Informática para Internet
 
 A Segurança da Informação é definida como o conjunto de práticas, políticas, tecnologias e metodologias que visam proteger dados e sistemas contra acessos não autorizados, modificações indevidas, destruição ou vazamentos. No cenário do desenvolvimento web, essa disciplina apoia-se tradicionalmente na tríade conhecida como CID: Confidencialidade (garantia de que apenas pessoas autorizadas acessem o dado), Integridade (garantia de que a informação não foi alterada indevidamente) e Disponibilidade (garantia de que o sistema estará acessível quando necessário).
 
+**Proteção dos dados do usuário:**   
+
+Proteger os dados dos usuários é uma obrigação tanto técnica quanto legal e ética. Com a vigência de legislações como a Lei Geral de Proteção de Dados (LGPD) no Brasil, as organizações são diretamente responsáveis por salvaguardar informações pessoais e sensíveis contra incidentes. Além de evitar sanções financeiras e processos judiciais, a proteção de dados preserva a reputação da instituição e estabelece uma relação de confiança com o público-alvo, mitigando os severos prejuízos causados pelo roubo de identidade e fraudes financeiras.
+
