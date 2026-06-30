@@ -87,3 +87,5 @@ Um componente indispensável nesse processo é o **Salt** (sal). O salt consiste
 
 Para que um algoritmo de hash seja considerado seguro para senhas, ele deve possuir alta resistência a colisões (duas entradas diferentes gerarem o mesmo hash) e possuir um "fator de custo" ajustável. Esse custo obriga o computador a realizar milhares de ciclos de processamento para gerar um único hash, tornando o processo lento o suficiente para impedir que invasores testem bilhões de combinações por segundo em ataques de força bruta.
 
+## 7. Proteção contra Ataques
+
