@@ -102,3 +102,5 @@ O desenvolvimento seguro em PHP exige a adoção de contra-medidas específicas 
 Os mecanismos de segurança descritos são a base operacional de praticamente todos os sistemas modernos conectados à internet:
 
 - **Sistemas de Login e Aplicativos de Gerenciamento de Usuários:** Dependem crucialmente das funções ```password_hash()``` e ```password_verify()``` com Salts para proteger as credenciais de acesso de clientes e administradores.
+
+- **Comércio Eletrônico (E-commerce) e Internet Banking:** Utilizam o OpenSSL (```openssl_encrypt```) para proteger transações financeiras, números de cartões de crédito e dados fiscais, além de dependerem de defesas rigorosas contra SQL Injection e CSRF para evitar fraudes financeiras e roubo de saldos.
