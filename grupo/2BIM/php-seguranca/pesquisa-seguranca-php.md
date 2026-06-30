@@ -71,3 +71,7 @@ No ecossistema do PHP, as funções ```base64_encode()``` e ```base64_decode()``
 Essas funções são aplicadas em situações práticas onde dados binários precisam ser transmitidos por canais que foram originalmente desenhados para lidar apenas com texto. Um caso de uso comum é a inclusão de imagens diretamente no corpo de documentos HTML ou XML, ou o envio de arquivos anexos através de protocolos de e-mail (como o SMTP).
 
 É um erro conceitual grave classificar o Base64 como uma forma de criptografia. O Base64 não visa ocultar informações ou restringir o acesso a elas; seu algoritmo é amplamente conhecido, público e não faz uso de chaves secretas ou senhas para realizar a conversão. Portanto, qualquer dado codificado em Base64 pode ser decodificado instantaneamente por qualquer sistema ou usuário, não oferecendo nenhuma camada de confidencialidade.
+
+
+## 5. Criptografia no PHP
+
