@@ -104,3 +104,5 @@ Os mecanismos de segurança descritos são a base operacional de praticamente to
 - **Sistemas de Login e Aplicativos de Gerenciamento de Usuários:** Dependem crucialmente das funções ```password_hash()``` e ```password_verify()``` com Salts para proteger as credenciais de acesso de clientes e administradores.
 
 - **Comércio Eletrônico (E-commerce) e Internet Banking:** Utilizam o OpenSSL (```openssl_encrypt```) para proteger transações financeiras, números de cartões de crédito e dados fiscais, além de dependerem de defesas rigorosas contra SQL Injection e CSRF para evitar fraudes financeiras e roubo de saldos.
+
+- **Redes Sociais e Sistemas Escolares:** Manipulam grandes volumes de informações pessoais e de propriedade intelectual. Utilizam a codificação Base64 para tráfego interno de mídias e documentos, combinada com sanitização estrita contra XSS para evitar que publicações de usuários ou mensagens em fóruns escolares espalhem vírus ou scripts de roubo de cookies.
