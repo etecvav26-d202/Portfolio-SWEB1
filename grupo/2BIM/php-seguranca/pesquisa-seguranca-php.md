@@ -124,3 +124,11 @@ Para construir e manter aplicações escritas em PHP que sejam resilientes a ata
 - **Manter o PHP atualizado:** Utilizar sempre as versões ativas e suportadas oficialmente pela comunidade do PHP, garantindo a correção imediata de vulnerabilidades de segurança descobertas no núcleo da linguagem.
 
 - **Proteger arquivos de configuração:** Armazenar credenciais de bancos de dados e chaves secretas em arquivos ```.env``` localizados fora do diretório público da aplicação (```public_html``` ou ```web```), impedindo o acesso direto via navegador.
+
+## 10. Conclusão
+
+A segurança em aplicações web deixou de ser um diferencial técnico e passou a ser um requisito fundamental e crítico no desenvolvimento de sistemas de software. À medida que a sociedade se digitaliza, a infraestrutura da web torna-se o alvo principal de agentes maliciosos, tornando a proteção de sistemas uma linha de defesa vital para a continuidade dos negócios e a proteção dos direitos dos cidadãos.
+
+Dentre todos os recursos pesquisados, o gerenciamento seguro de senhas através de funções como ```password_hash()``` associado à prática de consultas preparadas (Prepared Statements) configuram-se como os mais cruciais. Eles combatem diretamente as vulnerabilidades mais exploradas e catastróficas da história da internet: o vazamento de credenciais e a injeção de comandos em bancos de dados.
+
+Com a realização desta pesquisa, compreendeu-se que a segurança não deve ser uma camada adicionada ao final do desenvolvimento de um projeto, mas sim um princípio norteador aplicado desde as primeiras linhas de código. O conhecimento adquirido acerca do funcionamento de hashes lentos, criptografia simétrica e os mecanismos de mitigação de ataques expande a visão técnica e capacita a engenharia de software a construir ecossistemas digitais robustos, confiáveis e em conformidade com as exigências contemporâneas.
