@@ -28,3 +28,7 @@ A Segurança da Informação é definida como o conjunto de práticas, política
 
 Proteger os dados dos usuários é uma obrigação tanto técnica quanto legal e ética. Com a vigência de legislações como a Lei Geral de Proteção de Dados (LGPD) no Brasil, as organizações são diretamente responsáveis por salvaguardar informações pessoais e sensíveis contra incidentes. Além de evitar sanções financeiras e processos judiciais, a proteção de dados preserva a reputação da instituição e estabelece uma relação de confiança com o público-alvo, mitigando os severos prejuízos causados pelo roubo de identidade e fraudes financeiras.
 
+**Principais riscos em aplicações:**   
+
+Os principais riscos enfrentados por aplicações desenvolvidas para a Internet derivam, em grande parte, de falhas de lógica no código ou de configurações inadequadas nos servidores. Entre as ameaças mais recorrentes mapeadas por consórcios globais como o OWASP, destacam-se a injeção de scripts e comandos maliciosos, a quebra de autenticação (permitindo o sequestro de contas), o vazamento de dados sensíveis por falta de criptografia em trânsito ou repouso, e a exposição de interfaces de programação (APIs) sem o devido controle de acesso.
+
