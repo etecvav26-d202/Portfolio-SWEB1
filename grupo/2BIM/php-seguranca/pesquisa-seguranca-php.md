@@ -111,3 +111,7 @@ A aplicação dessas técnicas nesses sistemas é vital porque a falha em qualqu
 
 ## 9. Boas Práticas de Segurança
 
+Para construir e manter aplicações escritas em PHP que sejam resilientes a ataques, os desenvolvedores devem seguir um guia rigoroso de boas práticas:
+
+- **Validar e filtrar todas as entradas:** Nunca confiar em qualquer dado vindo do usuário (sejam formulários, URLs ou cookies). Use ```filter_var()``` para garantir que e-mails, números e URLs estejam nos formatos corretos.
+
