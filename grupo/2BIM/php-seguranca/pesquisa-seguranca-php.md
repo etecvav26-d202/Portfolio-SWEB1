@@ -70,6 +70,5 @@ Atualmente, os algoritmos recomendados pela comunidade de segurança e definidos
 
 No ecossistema do PHP, as funções ```base64_encode()``` e ```base64_decode()``` são amplamente utilizadas para manipular dados textuais e binários.
 
-**```base64_encode()```:**
+- **```base64_encode()```:** A função ```base64_encode()``` serve para converter qualquer conjunto de dados em uma representação de caracteres ASCII legíveis.
 
-A função ```base64_encode()``` serve para converter qualquer conjunto de dados em uma representação de caracteres ASCII legíveis.
