@@ -50,3 +50,5 @@ require __DIR__ . '/header.php';
 <h3>Código essencial</h3>
 <pre>$codificado = base64_encode($texto);
 $original = base64_decode($codificado);</pre>
+
+<?php require __DIR__ . 'includes/footer.php'; ?>
