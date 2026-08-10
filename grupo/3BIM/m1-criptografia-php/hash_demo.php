@@ -24,3 +24,22 @@ require __DIR__ . 'includes/header.php';
     <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
     <button type="submit">Gerar hashes</button>
 </form>
+
+<div class="resultado">
+    <table>
+        <thead>
+            <tr>
+                <th>Algoritmo</th>
+                <th>Hash gerado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($algoritmos as $algoritmo): ?>
+                <tr>
+                    <td><code><?= htmlspecialchars($algoritmo) ?></code></td>
+                    <td><code><?= htmlspecialchars(hash($algoritmo, $texto)) ?></code></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
