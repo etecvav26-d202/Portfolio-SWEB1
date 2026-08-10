@@ -27,3 +27,22 @@ require __DIR__ . '/header.php';
     <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
     <button type="submit">Codificar / decodificar</button>
 </form>
+
+<div class="resultado">
+    <table>
+        <tbody>
+            <tr>
+                <th>Texto original</th>
+                <td><?= htmlspecialchars($texto) ?></td>
+            </tr>
+            <tr>
+                <th>Codificado em Base64</th>
+                <td><code><?= htmlspecialchars($codificado) ?></code></td>
+            </tr>
+            <tr>
+                <th>Decodificado de volta</th>
+                <td><?= htmlspecialchars($decodificado) ?></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
