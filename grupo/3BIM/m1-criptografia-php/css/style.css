@@ -36,3 +36,15 @@ body {
     background: #c4a0e3;
     color: #5b21b6;
 }
+
+.conteudo {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1.5rem 2rem;
+}
+
+h2 {
+    color: #5b21b6;
+    border-bottom: 1px solid #c4a0e3;
+    padding-bottom: 0.5rem;
+}
