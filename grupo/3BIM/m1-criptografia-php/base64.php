@@ -22,7 +22,7 @@ require __DIR__ . '/includes/header.php';
     não para escondê-los.
 </p>
 
-<form method="post" action="base64_demo.php">
+<form method="post" action="base64.php">
     <label for="texto">Texto para codificar em Base64:</label>
     <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
     <button type="submit">Codificar / decodificar</button>

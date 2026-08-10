@@ -19,7 +19,7 @@ require __DIR__ . '/includes/header.php';
     avalanche).
 </p>
 
-<form method="post" action="hash_demo.php">
+<form method="post" action="hash.php">
     <label for="texto">Texto para gerar o hash:</label>
     <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
     <button type="submit">Gerar hashes</button>

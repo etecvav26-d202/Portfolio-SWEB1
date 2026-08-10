@@ -47,7 +47,7 @@ require __DIR__ . '/includes/header.php';
     cifrado com a pública só é decifrado com a privada correspondente.
 </p>
 
-<form method="post" action="rsa_demo.php">
+<form method="post" action="rsa.php">
     <label for="texto">Texto curto para cifrar com a chave pública:</label>
     <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
     <button type="submit">Gerar par de chaves e cifrar</button>

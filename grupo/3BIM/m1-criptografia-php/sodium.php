@@ -68,7 +68,7 @@ require __DIR__ . '/includes/header.php';
 <?php if (!$disponivel): ?>
 <?php else: ?>
 
-    <form method="post" action="sodium_demo.php">
+    <form method="post" action="sodium.php">
         <label for="texto">Texto para cifrar com Sodium:</label>
         <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
         <button type="submit">Cifrar (simétrico e assimétrico)</button>
