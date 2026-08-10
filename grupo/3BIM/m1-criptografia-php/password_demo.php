@@ -44,3 +44,24 @@ require __DIR__ . 'includes/header.php';
 
     <button type="submit">Gerar / conferir</button>
 </form>
+
+<div class="resultado">
+    <table>
+        <tbody>
+            <tr>
+                <th>Hash BCRYPT</th>
+                <td><code><?= htmlspecialchars($hashBcrypt) ?></code></td>
+            </tr>
+            <?php if ($hashArgon2id): ?>
+            <tr>
+                <th>Hash ARGON2ID</th>
+                <td><code><?= htmlspecialchars($hashArgon2id) ?></code></td>
+            </tr>
+            <?php else: ?>
+            <tr>
+                <th>ARGON2ID</th>
+                <td>Não disponível nesta instalação (requer PHP compilado com libargon2).</td>
+            </tr>
+            <?php endif; ?>
+        </tbody>
+    </table>
