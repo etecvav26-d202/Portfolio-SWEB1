@@ -24,3 +24,5 @@ $titulo = $titulo ?? 'Demonstração de Criptografia em PHP';
         <a href="sodium_demo.php">Sodium</a>
         <a href="base64_demo.php">Base64</a>
     </nav>
+</header>
+<main class="conteudo">
