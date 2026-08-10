@@ -52,3 +52,39 @@ require __DIR__ . 'includes/header.php';
     <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
     <button type="submit">Gerar par de chaves e cifrar</button>
 </form>
+
+<?php if ($erro): ?>
+<?php else: ?>
+    <div class="resultado">
+        <table>
+            <tbody>
+                <tr>
+                    <th>Chave pública (PEM)</th>
+                    <td><pre><?= htmlspecialchars($chavePublicaPem) ?></pre></td>
+                </tr>
+                <tr>
+                    <th>Chave privada (PEM)</th>
+                    <td><pre><?= htmlspecialchars($chavePrivadaPem) ?></pre></td>
+                </tr>
+                <tr>
+                    <th>Texto cifrado (base64)</th>
+                    <td><code><?= htmlspecialchars($textoCifradoBase64) ?></code></td>
+                </tr>
+                <tr>
+                    <th>Texto decifrado com a chave privada</th>
+                    <td><?= htmlspecialchars($textoDecifrado) ?></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<?php endif; ?>
+
+<h3>Código essencial</h3>
+<pre>$par = openssl_pkey_new(['private_key_bits' => 2048, 'private_key_type' => OPENSSL_KEYTYPE_RSA]);
+openssl_pkey_export($par, $chavePrivada);
+$chavePublica = openssl_pkey_get_details($par)['key'];
+
+openssl_public_encrypt($texto, $cifrado, $chavePublica);
+openssl_private_decrypt($cifrado, $decifrado, $chavePrivada);</pre>
+
+<?php require __DIR__ . 'includes/footer.php'; ?>
