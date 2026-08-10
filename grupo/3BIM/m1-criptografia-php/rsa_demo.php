@@ -79,12 +79,17 @@ require __DIR__ . '/includes/header.php';
     </div>
 <?php endif; ?>
 
-<h3>Código essencial</h3>
-<pre>$par = openssl_pkey_new(['private_key_bits' => 2048, 'private_key_type' => OPENSSL_KEYTYPE_RSA]);
+<h3>Código essencial (com os valores desta execução)</h3>
+<pre>$texto = '<?= htmlspecialchars(addslashes($texto)) ?>';
+
+$par = openssl_pkey_new(['private_key_bits' => 2048, 'private_key_type' => OPENSSL_KEYTYPE_RSA]);
 openssl_pkey_export($par, $chavePrivada);
 $chavePublica = openssl_pkey_get_details($par)['key'];
- 
+
 openssl_public_encrypt($texto, $cifrado, $chavePublica);
-openssl_private_decrypt($cifrado, $decifrado, $chavePrivada);</pre>
+// $cifrado (base64) = <?= htmlspecialchars($textoCifradoBase64) ?>
+
+openssl_private_decrypt($cifrado, $decifrado, $chavePrivada);
+// $decifrado = <?= htmlspecialchars($textoDecifrado) ?></pre>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>
