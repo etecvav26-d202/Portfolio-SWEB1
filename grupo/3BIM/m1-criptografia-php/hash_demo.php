@@ -10,3 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['texto']) && $_POST['t
 
 require __DIR__ . 'includes/header.php';
 ?>
+
+<h2>Hash (funções de resumo criptográfico)</h2>
+<p>
+    Um hash transforma qualquer entrada em uma saída de tamanho fixo. É uma
+    via de mão única: não existe função "desfazer_hash()". Pequenas
+    mudanças na entrada geram saídas completamente diferentes (efeito
+    avalanche).
+</p>
