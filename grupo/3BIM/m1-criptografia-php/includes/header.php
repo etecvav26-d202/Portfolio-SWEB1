@@ -16,3 +16,11 @@ $titulo = $titulo ?? 'Demonstração de Criptografia em PHP';
 <header class="topo">
     <h1> Criptografia em PHP</h1>
     <nav>
+        <a href="index.php">Início</a>
+        <a href="hash_demo.php">Hash</a>
+        <a href="password_demo.php">Senhas</a>
+        <a href="openssl_demo.php">OpenSSL (AES)</a>
+        <a href="rsa_demo.php">RSA</a>
+        <a href="sodium_demo.php">Sodium</a>
+        <a href="base64_demo.php">Base64</a>
+    </nav>
