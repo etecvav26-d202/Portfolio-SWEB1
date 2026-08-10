@@ -25,3 +25,10 @@ $textoDecifrado = openssl_decrypt($cifradoRecebido, $metodo, $chave, OPENSSL_RAW
 
 require __DIR__ . 'includes/header.php';
 ?>
+
+<h2>Criptografia simétrica com OpenSSL</h2>
+<p>
+    Na criptografia simétrica, a <strong>mesma chave</strong> cifra e
+    decifra os dados. É rápida e ótima para grandes volumes, mas exige que
+    as duas partes compartilhem a chave secreta com segurança.
+</p>
