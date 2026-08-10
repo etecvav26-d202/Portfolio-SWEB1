@@ -43,3 +43,9 @@ require __DIR__ . 'includes/header.php';
         </tbody>
     </table>
 </div>
+
+<h3>Todos os algoritmos suportados por esta instalação do PHP</h3>
+<p>A função <code>hash_algos()</code> lista tudo o que está disponível:</p>
+<pre><?= htmlspecialchars(implode(', ', hash_algos())) ?></pre>
+
+<?php require __DIR__ . 'includes/footer.php'; ?>
