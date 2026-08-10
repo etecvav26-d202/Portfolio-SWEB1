@@ -34,3 +34,12 @@ require __DIR__ . '/header.php';
         </p>
         <a href="password_demo.php">Ver demonstração →</a>
     </div>
+
+    <div class="card">
+        <h3>3. Criptografia simétrica — OpenSSL (AES-256-CBC)</h3>
+        <p>
+            Criptografia reversível: a mesma chave secreta é usada para
+            cifrar e decifrar. Rápida e ideal para grandes volumes de dados.
+        </p>
+        <a href="openssl_demo.php">Ver demonstração →</a>
+    </div>
