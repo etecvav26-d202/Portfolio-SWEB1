@@ -19,7 +19,6 @@ $hashArgon2id = defined('PASSWORD_ARGON2ID')
     ? password_hash($senha, PASSWORD_ARGON2ID)
     : null;
 
-// Se o usuário preencheu o campo de conferência, valida contra o hash bcrypt gerado.
 if ($senhaConferir !== '') {
     $resultadoConferencia = password_verify($senhaConferir, $hashBcrypt);
 }
@@ -35,7 +34,7 @@ require __DIR__ . '/includes/header.php';
     <code>password_verify()</code>.
 </p>
 
-<form method="post" action="password_demo.php">
+<form method="post" action="password.php">
     <label for="senha">Senha para gerar o hash:</label>
     <input type="text" id="senha" name="senha" value="<?= htmlspecialchars($senha) ?>">
 
