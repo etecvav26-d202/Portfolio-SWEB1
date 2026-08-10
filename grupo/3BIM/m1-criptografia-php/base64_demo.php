@@ -21,3 +21,9 @@ require __DIR__ . '/header.php';
     transportar dados (por exemplo, anexar uma imagem dentro de um JSON),
     não para escondê-los.
 </p>
+
+<form method="post" action="base64_demo.php">
+    <label for="texto">Texto para codificar em Base64:</label>
+    <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
+    <button type="submit">Codificar / decodificar</button>
+</form>
