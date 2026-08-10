@@ -1,7 +1,7 @@
 <?php
 $titulo = 'Base64 — codificação, não criptografia';
 
-$texto = 'Isso não está protegido, só codificado!';
+$texto = 'Não protegido, apenas codificado';
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['texto']) && $_POST['texto'] !== '') {
     $texto = $_POST['texto'];
 }
