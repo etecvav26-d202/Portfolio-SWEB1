@@ -53,3 +53,13 @@ require __DIR__ . '/header.php';
         </p>
         <a href="rsa_demo.php">Ver demonstração →</a>
     </div>
+
+    <div class="card">
+        <h3>5. Libsodium (moderna e recomendada)</h3>
+        <p>
+            Extensão <code>sodium</code>, incluída no PHP desde a versão
+            7.2. Oferece criptografia autenticada (AEAD) simétrica e
+            assimétrica com uma API mais simples e segura por padrão.
+        </p>
+        <a href="sodium_demo.php">Ver demonstração →</a>
+    </div>
