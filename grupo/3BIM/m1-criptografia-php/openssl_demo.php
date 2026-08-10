@@ -22,3 +22,6 @@ $pacoteBruto = base64_decode($pacoteTransporte);
 $ivRecebido = substr($pacoteBruto, 0, $tamanhoIv);
 $cifradoRecebido = substr($pacoteBruto, $tamanhoIv);
 $textoDecifrado = openssl_decrypt($cifradoRecebido, $metodo, $chave, OPENSSL_RAW_DATA, $ivRecebido);
+
+require __DIR__ . 'includes/header.php';
+?>
