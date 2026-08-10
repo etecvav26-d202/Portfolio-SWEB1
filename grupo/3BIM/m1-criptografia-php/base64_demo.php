@@ -46,3 +46,7 @@ require __DIR__ . '/header.php';
         </tbody>
     </table>
 </div>
+
+<h3>Código essencial</h3>
+<pre>$codificado = base64_encode($texto);
+$original = base64_decode($codificado);</pre>
