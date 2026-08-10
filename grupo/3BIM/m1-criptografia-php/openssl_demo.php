@@ -7,3 +7,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['texto']) && $_POST['t
 }
 
 $metodo = 'aes-256-cbc';
+
+$senha = 'chave-secreta-de-demonstracao';
+$chave = hash('sha256', $senha, true); // 32 bytes, exigido pelo AES-256
