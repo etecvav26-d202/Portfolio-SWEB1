@@ -20,7 +20,7 @@ require __DIR__ . '/includes/header.php';
             Usadas para checksums e verificação de integridade — não devem
             ser usadas sozinhas para senhas.
         </p>
-        <a href="hash_demo.php">Ver demonstração →</a>
+        <a href="hash.php">Ver demonstração →</a>
     </div>
 
     <div class="card">
@@ -30,7 +30,7 @@ require __DIR__ . '/includes/header.php';
             a forma correta e recomendada de armazenar senhas no PHP, com
             "salt" automático e custo ajustável.
         </p>
-        <a href="password_demo.php">Ver demonstração →</a>
+        <a href="password.php">Ver demonstração →</a>
     </div>
 
     <div class="card">
@@ -39,7 +39,7 @@ require __DIR__ . '/includes/header.php';
             Criptografia reversível: a mesma chave secreta é usada para
             cifrar e decifrar. Rápida e ideal para grandes volumes de dados.
         </p>
-        <a href="openssl_demo.php">Ver demonstração →</a>
+        <a href="openssl.php">Ver demonstração →</a>
     </div>
 
     <div class="card">
@@ -49,7 +49,7 @@ require __DIR__ . '/includes/header.php';
             chave pública só pode ser decifrado com a chave privada
             correspondente. Base de certificados digitais e TLS/SSL.
         </p>
-        <a href="rsa_demo.php">Ver demonstração →</a>
+        <a href="rsa.php">Ver demonstração →</a>
     </div>
 
     <div class="card">
@@ -59,7 +59,7 @@ require __DIR__ . '/includes/header.php';
             7.2. Oferece criptografia autenticada (AEAD) simétrica e
             assimétrica com uma API mais simples e segura por padrão.
         </p>
-        <a href="sodium_demo.php">Ver demonstração →</a>
+        <a href="sodium.php">Ver demonstração →</a>
     </div>
 
     <div class="card">
@@ -70,7 +70,7 @@ require __DIR__ . '/includes/header.php';
             pessoa consegue decodificar. Serve para transportar dados
             binários em texto, não para proteger informação.
         </p>
-        <a href="base64_demo.php">Ver demonstração →</a>
+        <a href="base64.php">Ver demonstração →</a>
     </div>
 
 </div>
