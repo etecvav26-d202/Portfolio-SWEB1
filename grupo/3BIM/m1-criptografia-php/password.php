@@ -69,9 +69,9 @@ require __DIR__ . '/includes/header.php';
         <p>
             Resultado de <code>password_verify()</code> contra o hash BCRYPT:
             <?php if ($resultadoConferencia): ?>
-                <strong style="color:#4ade80">✔ Senha confere</strong>
+                <strong style="color:#4ade80">Senha confere</strong>
             <?php else: ?>
-                <strong style="color:#f87171">✘ Senha não confere</strong>
+                <strong style="color:#f87171">Senha não confere</strong>
             <?php endif; ?>
         </p>
     <?php endif; ?>
