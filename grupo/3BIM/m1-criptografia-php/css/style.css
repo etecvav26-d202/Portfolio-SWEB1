@@ -152,3 +152,16 @@ code, pre {
     border-radius: 4px;
     color: #5b21b6;
 }
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.rodape {
+    text-align: center;
+    color: #4c2e66;
+    padding: 1.5rem;
+    border-top: 1px solid #c4a0e3;
+    font-size: 0.85rem;
+}
