@@ -43,3 +43,13 @@ require __DIR__ . '/header.php';
         </p>
         <a href="openssl_demo.php">Ver demonstração →</a>
     </div>
+
+    <div class="card">
+        <h3>4. Criptografia assimétrica — RSA</h3>
+        <p>
+            Usa um par de chaves (pública/privada). O que é cifrado com a
+            chave pública só pode ser decifrado com a chave privada
+            correspondente. Base de certificados digitais e TLS/SSL.
+        </p>
+        <a href="rsa_demo.php">Ver demonstração →</a>
+    </div>
