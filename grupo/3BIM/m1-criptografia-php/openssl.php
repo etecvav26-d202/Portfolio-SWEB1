@@ -33,7 +33,7 @@ require __DIR__ . '/includes/header.php';
     as duas partes compartilhem a chave secreta com segurança.
 </p>
 
-<form method="post" action="openssl_demo.php">
+<form method="post" action="openssl.php">
     <label for="texto">Texto para cifrar com AES-256-CBC:</label>
     <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
     <button type="submit">Cifrar e decifrar</button>
