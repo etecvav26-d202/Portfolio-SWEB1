@@ -61,7 +61,7 @@ require __DIR__ . '/includes/header.php';
     A extensão <code>sodium</code> é a recomendação atual para novos
     projetos: API enxuta, escolhas seguras por padrão e proteção contra
     adulteração dos dados (autenticação), algo que o AES-CBC "puro" não
-    oferece sozinho.
+    oferece sozinho. Ele confere senhas igual o RSA, porém de forma mais moderna e não lê a senha original, mas sabe se está correta.
 </p>
 
 
