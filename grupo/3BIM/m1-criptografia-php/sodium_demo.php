@@ -65,3 +65,51 @@ require __DIR__ . 'includes/header.php';
     adulteração dos dados (autenticação), algo que o AES-CBC "puro" não
     oferece sozinho.
 </p>
+
+
+<?php if (!$disponivel): ?>
+<?php else: ?>
+
+    <form method="post" action="sodium_demo.php">
+        <label for="texto">Texto para cifrar com Sodium:</label>
+        <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
+        <button type="submit">Cifrar (simétrico e assimétrico)</button>
+    </form>
+
+    <h3>1. Simétrica autenticada — <code>crypto_secretbox</code></h3>
+    <div class="resultado">
+        <table>
+            <tbody>
+                <tr><th>Chave (base64)</th><td><code><?= htmlspecialchars($resultadoSimetrico['chave']) ?></code></td></tr>
+                <tr><th>Nonce (base64)</th><td><code><?= htmlspecialchars($resultadoSimetrico['nonce']) ?></code></td></tr>
+                <tr><th>Cifrado (base64)</th><td><code><?= htmlspecialchars($resultadoSimetrico['cifrado']) ?></code></td></tr>
+                <tr><th>Decifrado</th><td><?= htmlspecialchars($resultadoSimetrico['decifrado']) ?></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>2. Assimétrica — <code>crypto_box</code> (Curve25519)</h3>
+    <div class="resultado">
+        <table>
+            <tbody>
+                <tr><th>Chave pública do remetente</th><td><code><?= htmlspecialchars($resultadoAssimetrico['publica_remetente']) ?></code></td></tr>
+                <tr><th>Chave pública do destinatário</th><td><code><?= htmlspecialchars($resultadoAssimetrico['publica_destinatario']) ?></code></td></tr>
+                <tr><th>Cifrado (base64)</th><td><code><?= htmlspecialchars($resultadoAssimetrico['cifrado']) ?></code></td></tr>
+                <tr><th>Decifrado pelo destinatário</th><td><?= htmlspecialchars($resultadoAssimetrico['decifrado']) ?></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Código essencial</h3>
+    <pre>
+$chave = sodium_crypto_secretbox_keygen();
+$nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
+$cifrado = sodium_crypto_secretbox($texto, $nonce, $chave);
+$texto = sodium_crypto_secretbox_open($cifrado, $nonce, $chave);
+
+$par = sodium_crypto_box_keypair();
+$cifrado = sodium_crypto_box($texto, $nonce, $chaveCompartilhada);</pre>
+
+<?php endif; ?>
+
+<?php require __DIR__ . 'includes/footer.php'; ?>
