@@ -12,10 +12,25 @@ $chavePrivadaPem = '';
 $textoCifradoBase64 = '';
 $textoDecifrado = '';
 
-$recurso = openssl_pkey_new([
+$configArgs = [
     'private_key_bits' => 2048,
     'private_key_type' => OPENSSL_KEYTYPE_RSA,
-]);
+];
+
+$caminhosConfigOpenssl = [
+    'C:\\xampp\\apache\\conf\\openssl.cnf',
+    'C:\\xampp\\apache\\bin\\openssl.cnf',
+    'C:\\xampp\\php\\extras\\openssl\\openssl.cnf',
+    'C:\\xampp\\php\\extras\\ssl\\openssl.cnf',
+];
+foreach ($caminhosConfigOpenssl as $caminho) {
+    if (file_exists($caminho)) {
+        $configArgs['config'] = $caminho;
+        break;
+    }
+}
+
+$recurso = openssl_pkey_new($configArgs);
 
 if ($recurso === false) {
     $erro = 'Não foi possível gerar o par de chaves RSA nesta instalação do PHP.';
