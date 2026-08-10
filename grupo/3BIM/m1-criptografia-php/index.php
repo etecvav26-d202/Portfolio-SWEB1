@@ -1,6 +1,6 @@
 <?php
 $titulo = 'Início — Demonstração de Criptografia em PHP';
-require __DIR__ . '/header.php';
+require __DIR__ . 'includes/header.php';
 ?>
 
 <h2>O que este site demonstra</h2>
@@ -76,3 +76,5 @@ require __DIR__ . '/header.php';
     </div>
 
 </div>
+
+<?php require __DIR__ . 'includes/footer.php'; ?>
