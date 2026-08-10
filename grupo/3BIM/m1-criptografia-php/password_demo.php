@@ -85,4 +85,4 @@ if (password_verify($senhaDigitada, $hash)) {
     // login liberado
 }</pre>
 
-<?php require __DIR__ . '/footer.php'; ?>
+<?php require __DIR__ . 'includes/footer.php'; ?>
