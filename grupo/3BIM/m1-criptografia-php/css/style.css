@@ -89,3 +89,42 @@ th, td {
 th {
     color: #5b21b6;
 }
+
+form {
+    background: #d3b8ec;
+    border: 1px solid #c4a0e3;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #4c2e66;
+    font-size: 0.9rem;
+}
+
+input[type=text], input[type=password], textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #c4a0e3;
+    background: #f1e5fa;
+    color: #351b4d;
+    margin-bottom: 0.8rem;
+}
+
+button {
+    background: #7c3aed;
+    color: #ffffff;
+    border: none;
+    padding: 0.55rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5b21b6;
+}
