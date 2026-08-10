@@ -15,3 +15,5 @@ $tamanhoIv = openssl_cipher_iv_length($metodo);
 $iv = openssl_random_pseudo_bytes($tamanhoIv);
 
 $textoCifrado = openssl_encrypt($texto, $metodo, $chave, OPENSSL_RAW_DATA, $iv);
+
+$pacoteTransporte = base64_encode($iv . $textoCifrado);
