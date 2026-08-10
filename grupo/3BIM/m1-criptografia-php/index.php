@@ -24,3 +24,13 @@ require __DIR__ . '/header.php';
         </p>
         <a href="hash_demo.php">Ver demonstração →</a>
     </div>
+
+    <div class="card">
+        <h3>2. Hash de senhas (bcrypt / Argon2id)</h3>
+        <p>
+            <code>password_hash()</code> e <code>password_verify()</code>,
+            a forma correta e recomendada de armazenar senhas no PHP, com
+            "salt" automático e custo ajustável.
+        </p>
+        <a href="password_demo.php">Ver demonstração →</a>
+    </div>
