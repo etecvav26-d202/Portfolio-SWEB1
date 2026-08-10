@@ -63,3 +63,16 @@ require __DIR__ . '/header.php';
         </p>
         <a href="sodium_demo.php">Ver demonstração →</a>
     </div>
+
+    <div class="card">
+        <h3>6. Base64 (não é criptografia!)</h3>
+        <p>
+            Muita gente confunde. Base64 é apenas uma
+            <strong>codificação</strong> reversível sem chave — qualquer
+            pessoa consegue decodificar. Serve para transportar dados
+            binários em texto, não para proteger informação.
+        </p>
+        <a href="base64_demo.php">Ver demonstração →</a>
+    </div>
+
+</div>
