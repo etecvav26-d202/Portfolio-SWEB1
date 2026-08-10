@@ -54,6 +54,7 @@ require __DIR__ . '/includes/header.php';
 </form>
 
 <?php if ($erro): ?>
+    <div class="aviso"><?= htmlspecialchars($erro) ?></div>
 <?php else: ?>
     <div class="resultado">
         <table>
