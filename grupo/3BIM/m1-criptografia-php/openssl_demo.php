@@ -32,3 +32,32 @@ require __DIR__ . 'includes/header.php';
     decifra os dados. É rápida e ótima para grandes volumes, mas exige que
     as duas partes compartilhem a chave secreta com segurança.
 </p>
+
+<form method="post" action="openssl_demo.php">
+    <label for="texto">Texto para cifrar com AES-256-CBC:</label>
+    <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
+    <button type="submit">Cifrar e decifrar</button>
+</form>
+
+<div class="resultado">
+    <table>
+        <tbody>
+            <tr>
+                <th>Texto original</th>
+                <td><?= htmlspecialchars($texto) ?></td>
+            </tr>
+            <tr>
+                <th>IV (aleatório, em base64)</th>
+                <td><code><?= htmlspecialchars(base64_encode($iv)) ?></code></td>
+            </tr>
+            <tr>
+                <th>Pacote cifrado (IV + dados, em base64)</th>
+                <td><code><?= htmlspecialchars($pacoteTransporte) ?></code></td>
+            </tr>
+            <tr>
+                <th>Texto decifrado (prova de que funciona)</th>
+                <td><?= htmlspecialchars($textoDecifrado) ?></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
