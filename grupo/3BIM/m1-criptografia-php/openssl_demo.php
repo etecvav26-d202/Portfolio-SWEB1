@@ -23,7 +23,7 @@ $ivRecebido = substr($pacoteBruto, 0, $tamanhoIv);
 $cifradoRecebido = substr($pacoteBruto, $tamanhoIv);
 $textoDecifrado = openssl_decrypt($cifradoRecebido, $metodo, $chave, OPENSSL_RAW_DATA, $ivRecebido);
 
-require __DIR__ . 'includes/header.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
 <h2>Criptografia simétrica com OpenSSL</h2>
@@ -70,4 +70,4 @@ $decifrado = openssl_decrypt($cifrado, 'aes-256-cbc', $chave, OPENSSL_RAW_DATA, 
 <h3>Métodos de cifra disponíveis nesta instalação</h3>
 <pre><?= htmlspecialchars(implode(', ', openssl_get_cipher_methods())) ?></pre>
 
-<?php require __DIR__ . 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

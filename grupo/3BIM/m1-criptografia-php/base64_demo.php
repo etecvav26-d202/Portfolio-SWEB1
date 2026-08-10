@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['texto']) && $_POST['t
 $codificado = base64_encode($texto);
 $decodificado = base64_decode($codificado);
 
-require __DIR__ . '/header.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
 <h2>Base64: por que não é criptografia?</h2>
@@ -51,4 +51,4 @@ require __DIR__ . '/header.php';
 <pre>$codificado = base64_encode($texto);
 $original = base64_decode($codificado);</pre>
 
-<?php require __DIR__ . 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

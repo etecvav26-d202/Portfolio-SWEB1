@@ -55,7 +55,7 @@ if ($disponivel) {
     ];
 }
 
-require __DIR__ . 'includes/header.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
 <h2>Libsodium — criptografia moderna e autenticada</h2>
@@ -112,4 +112,4 @@ $cifrado = sodium_crypto_box($texto, $nonce, $chaveCompartilhada);</pre>
 
 <?php endif; ?>
 
-<?php require __DIR__ . 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

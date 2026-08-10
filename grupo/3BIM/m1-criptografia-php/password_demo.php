@@ -24,7 +24,7 @@ if ($senhaConferir !== '') {
     $resultadoConferencia = password_verify($senhaConferir, $hashBcrypt);
 }
 
-require __DIR__ . 'includes/header.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
 <h2>Hash de senhas com <code>password_hash()</code></h2>
@@ -85,4 +85,4 @@ if (password_verify($senhaDigitada, $hash)) {
     // login liberado
 }</pre>
 
-<?php require __DIR__ . 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

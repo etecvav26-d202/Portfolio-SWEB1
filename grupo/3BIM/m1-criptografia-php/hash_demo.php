@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['texto']) && $_POST['t
     $texto = $_POST['texto'];
 }
 
-require __DIR__ . 'includes/header.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
 <h2>Hash (funções de resumo criptográfico)</h2>
@@ -48,4 +48,4 @@ require __DIR__ . 'includes/header.php';
 <p>A função <code>hash_algos()</code> lista tudo o que está disponível:</p>
 <pre><?= htmlspecialchars(implode(', ', hash_algos())) ?></pre>
 
-<?php require __DIR__ . 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

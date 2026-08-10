@@ -36,7 +36,7 @@ if ($recurso === false) {
     }
 }
 
-require __DIR__ . 'includes/header.php';
+require __DIR__ . '/includes/header.php';
 ?>
 
 <h2>Criptografia assimétrica com RSA</h2>
@@ -87,4 +87,4 @@ $chavePublica = openssl_pkey_get_details($par)['key'];
 openssl_public_encrypt($texto, $cifrado, $chavePublica);
 openssl_private_decrypt($cifrado, $decifrado, $chavePrivada);</pre>
 
-<?php require __DIR__ . 'includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>
