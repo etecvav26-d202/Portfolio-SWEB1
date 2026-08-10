@@ -9,10 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['texto']) && $_POST['t
 $disponivel = extension_loaded('sodium');
 
 $resultadoSimetrico = null;
-$resultadoAssimetrico = null
+$resultadoAssimetrico = null;
 
 if ($disponivel) {
-    // ---------- 1) Simétrica autenticada: crypto_secretbox ----------
     $chaveSecreta = sodium_crypto_secretbox_keygen();
     $nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
     $cifrado = sodium_crypto_secretbox($texto, $nonce, $chaveSecreta);
@@ -25,7 +24,6 @@ if ($disponivel) {
         'decifrado' => $decifrado,
     ];
 
-    // ---------- 2) Assimétrica: crypto_box (curva25519) ----------
     $parRemetente = sodium_crypto_box_keypair();
     $parDestinatario = sodium_crypto_box_keypair();
 
@@ -112,4 +110,5 @@ $cifrado = sodium_crypto_box($texto, $nonce, $chaveCompartilhada);</pre>
 
 <?php endif; ?>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php';
+?>
