@@ -26,3 +26,21 @@ if ($senhaConferir !== '') {
 
 require __DIR__ . 'includes/header.php';
 ?>
+
+<h2>Hash de senhas com <code>password_hash()</code></h2>
+<p>
+    Esta é a API recomendada pelo próprio PHP para senhas. Ela já cuida do
+    "salt" aleatório e do fator de custo automaticamente, então dois hashes
+    da mesma senha nunca são iguais — mesmo assim, ambos validam com
+    <code>password_verify()</code>.
+</p>
+
+<form method="post" action="password_demo.php">
+    <label for="senha">Senha para gerar o hash:</label>
+    <input type="text" id="senha" name="senha" value="<?= htmlspecialchars($senha) ?>">
+
+    <label for="senha_conferir">Testar <code>password_verify()</code> com esta senha:</label>
+    <input type="text" id="senha_conferir" name="senha_conferir" value="<?= htmlspecialchars($senhaConferir) ?>" placeholder="Digite a mesma senha (ou outra) para testar">
+
+    <button type="submit">Gerar / conferir</button>
+</form>
