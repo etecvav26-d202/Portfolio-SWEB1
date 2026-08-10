@@ -24,9 +24,6 @@ if ($recurso === false) {
     $detalhes = openssl_pkey_get_details($recurso);
     $chavePublicaPem = $detalhes['key'];
 
-    // RSA "puro" só cifra blocos pequenos (limitado pelo tamanho da chave),
-    // por isso é normalmente usado para cifrar uma chave simétrica, não o
-    // dado inteiro. Aqui ciframos o texto diretamente só para demonstração.
     if (openssl_public_encrypt($texto, $textoCifrado, $chavePublicaPem)) {
         $textoCifradoBase64 = base64_encode($textoCifrado);
     } else {
@@ -41,3 +38,17 @@ if ($recurso === false) {
 
 require __DIR__ . 'includes/header.php';
 ?>
+
+<h2>Criptografia assimétrica com RSA</h2>
+<p>
+    No modelo assimétrico existem duas chaves matematicamente ligadas: a
+    <strong>chave pública</strong> (pode ser distribuída livremente) e a
+    <strong>chave privada</strong> (deve ser mantida em segredo). O que é
+    cifrado com a pública só é decifrado com a privada correspondente.
+</p>
+
+<form method="post" action="rsa_demo.php">
+    <label for="texto">Texto curto para cifrar com a chave pública:</label>
+    <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
+    <button type="submit">Gerar par de chaves e cifrar</button>
+</form>
