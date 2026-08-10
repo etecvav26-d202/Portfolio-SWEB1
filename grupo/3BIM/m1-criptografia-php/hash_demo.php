@@ -18,3 +18,9 @@ require __DIR__ . 'includes/header.php';
     mudanças na entrada geram saídas completamente diferentes (efeito
     avalanche).
 </p>
+
+<form method="post" action="hash_demo.php">
+    <label for="texto">Texto para gerar o hash:</label>
+    <input type="text" id="texto" name="texto" value="<?= htmlspecialchars($texto) ?>">
+    <button type="submit">Gerar hashes</button>
+</form>
