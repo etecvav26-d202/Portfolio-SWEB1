@@ -54,3 +54,14 @@ if ($disponivel) {
         'decifrado' => $decifradoBox,
     ];
 }
+
+require __DIR__ . 'includes/header.php';
+?>
+
+<h2>Libsodium — criptografia moderna e autenticada</h2>
+<p>
+    A extensão <code>sodium</code> é a recomendação atual para novos
+    projetos: API enxuta, escolhas seguras por padrão e proteção contra
+    adulteração dos dados (autenticação), algo que o AES-CBC "puro" não
+    oferece sozinho.
+</p>
