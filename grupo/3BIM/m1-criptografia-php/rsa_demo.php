@@ -83,7 +83,7 @@ require __DIR__ . '/includes/header.php';
 <pre>$par = openssl_pkey_new(['private_key_bits' => 2048, 'private_key_type' => OPENSSL_KEYTYPE_RSA]);
 openssl_pkey_export($par, $chavePrivada);
 $chavePublica = openssl_pkey_get_details($par)['key'];
-
+ 
 openssl_public_encrypt($texto, $cifrado, $chavePublica);
 openssl_private_decrypt($cifrado, $decifrado, $chavePrivada);</pre>
 
