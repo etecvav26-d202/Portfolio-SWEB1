@@ -65,3 +65,24 @@ require __DIR__ . 'includes/header.php';
             <?php endif; ?>
         </tbody>
     </table>
+    
+    <?php if ($resultadoConferencia !== null): ?>
+        <p>
+            Resultado de <code>password_verify()</code> contra o hash BCRYPT:
+            <?php if ($resultadoConferencia): ?>
+                <strong style="color:#4ade80">✔ Senha confere</strong>
+            <?php else: ?>
+                <strong style="color:#f87171">✘ Senha não confere</strong>
+            <?php endif; ?>
+        </p>
+    <?php endif; ?>
+</div>
+
+<h3>Código essencial</h3>
+<pre>$hash = password_hash($senha, PASSWORD_BCRYPT);
+
+if (password_verify($senhaDigitada, $hash)) {
+    // login liberado
+}</pre>
+
+<?php require __DIR__ . '/footer.php'; ?>
