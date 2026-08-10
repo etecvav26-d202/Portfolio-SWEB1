@@ -61,3 +61,13 @@ require __DIR__ . 'includes/header.php';
         </tbody>
     </table>
 </div>
+
+<h3>Código essencial</h3>
+<pre>$iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length('aes-256-cbc'));
+$cifrado = openssl_encrypt($texto, 'aes-256-cbc', $chave, OPENSSL_RAW_DATA, $iv);
+$decifrado = openssl_decrypt($cifrado, 'aes-256-cbc', $chave, OPENSSL_RAW_DATA, $iv);</pre>
+
+<h3>Métodos de cifra disponíveis nesta instalação</h3>
+<pre><?= htmlspecialchars(implode(', ', openssl_get_cipher_methods())) ?></pre>
+
+<?php require __DIR__ . 'includes/footer.php'; ?>
